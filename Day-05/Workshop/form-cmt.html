@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.sec-header{
+    padding: 20px 0;
+    margin: 10px 20px;
+}
+form input[type="text"],
+        form input[type="tel"],
+        form input[type="number"],
+        form input[type="email"],
+        form input[type="password"],
+        select,
+        textarea{
+            appearance: none; 
+            padding: 10px 16px;
+            border: 1px solid  #ddd;
+            border-radius: 4px;
+        }
+     
+    .title{
+        margin: 10px 0;
+    } 
+    .title .title-name{
+        margin-right: 20px;
+    }
+    .rates{
+        color: orange;
+    }
+    #t-form{
+        margin-bottom: 10px;
+    }
+    .content{
+        margin-bottom: 10px;
+    }
+    .info{
+        margin-bottom: 10px;
+    }
+    .verifi{
+        width: 100px;
+        margin-right: 20px;
+    }
+    .ver-form button{
+        border: none;
+        text-align: center;
+        background-color: orange;
+        padding: 10px 0;
+        width: 100px;
+        color: #ffff;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    .guest{
+        margin-top: 30px;
+    }
+    .comment{
+        margin: 10px 0;
+    }
+    .rate{
+        margin-right: 20px;
+    }
+    .rate i{
+        color: orange;
+    }
+    .rate i:last-child{
+        color: black;
+    }
+</style>
+<body>
+    <div class="container">
+        <section class="section">
+            <div class="sec-header">
+                <h2>Bình luận - đánh giá bài viết</h2>
+            </div>
+            <div class="title">
+                <span class="title-name">Chọn đánh giá của bạn</span>
+                <span class="rates">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </span>
+            </div>
+            <form action="" id="t-form">
+                <div class="content">
+                    <textarea placeholder="Nhập đánh giá về dịch vụ, ít nhất 80 ký tự" minlength="80" name="content" id="content" cols="80" rows="5"></textarea>
+                </div>
+                <div class="info">
+                    <input class="username" placeholder="Tên (Bắt buộc)" minlength="8" maxlength="30" required id="username" type="text" name="username">
+                    <input class="mail" placeholder="Email" id="email" type="email" name="email">
+                    <input class="phone" required pattern="^([0-9]+){10}$" id="phone" type="tel" name="phone" placeholder="Số điện thoại (tuỳ chọn)">
+                </div>
+                <div class="ver-form">
+                    <input class="verifi" type="number" name="Verifi" id="Verifi" placeholder="Mã BV">
+                    <button type="submit">Gửi đánh giá</button>
+                </div>
+            </form>
+            <div class="guest">
+                <div class="acc-name">
+                    <strong class="u-name"><i class="ri-user-2-fill"></i> nguyen van a</strong>
+                </div>
+                <div class="comment">
+                   <span class="rate">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                   </span>
+                   <span>bài viết rất bổ ích</span>
+                </div>
+                <p><b style="color: blue;">Thảo luận</b> 03-03-2023 15:35:29</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

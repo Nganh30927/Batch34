@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 30px auto;
+}
+.item .content >h3{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(86, 86, 86);
+}
+
+
+.header-title{
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-list .item {
+   width: 100%;
+   height: auto;
+    overflow: hidden;
+}
+
+.content{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.product-list .item .thumbnail {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.product-list .item .thumbnail img{
+    width: 100%;
+    height: auto;
+}
+.flex-items .product-list .item{
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+.flex-items .product-list .item{
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+.flex-items .item .thumbnail{
+    width: 100px;
+    max-height: 100px;
+    margin-right: 1rem;
+}
+.flex-items .item{
+    display: flex;
+    margin: 30px;
+}
+.product-list .item .star{
+    color: rgb(86, 86, 86);
+}
+.product-list .item .price{
+    margin-top: 10px;
+    color: rgb(86, 86, 86);
+}

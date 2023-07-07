@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .box {
+      width: 400px;
+      background-color: #f85700;
+      padding: 20px;
+      font-size: 20px;
+    }
+    #wrapper {
+      max-width: 900px;
+      margin: 0px auto;
+    }
+    .box > p {
+      color: #ffff;
+      margin-left: 20px;
+    }
+    .quote::before {
+      content: "\201C";
+    }
+
+    .quote::after {
+      content: "\201D";
+    }
+
+    img.a {
+      vertical-align: middle;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div class="box">
+        <p class="quote">
+          Donec ullamcorper nulla non metus auctor fringilla, Sed posuere
+          consectetur est at lobortis. Nullam id dolor id nibh ultricies
+          vehicula ut id .... Praesent commodo cursus magna.
+        </p>
+        <p>
+          <img
+            class="a"
+            src="https://st4.depositphotos.com/13768208/40924/i/450/depositphotos_409241302-stock-photo-positive-girl-with-hairbun-looking.jpg"
+          />
+          <span><b>JANE DOE</b></span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

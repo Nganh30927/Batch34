@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;;
+}
+html{
+    background-color: #111;
+}
+*{
+  box-sizing: border-box;
+}
+.container {
+    max-width: 900px;
+    height: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255,250,250);
+  }
+ .hobbie i{
+  margin-right: 10px;
+ }  
+ .hobbie div{
+  margin: 10px 0;
+ }
+  .row-header {
+    display: flex;
+    height: 120px;
+    /* background-color: rgb(255,250,250); */
+
+  }
+
+  .row-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    color: #c5c5c5;
+    /* background-color: rgb(255,250,250); */
+
+  }
+
+  .row-content {
+    display: flex;
+  }
+  .column-left {
+    flex: 1;
+    display: flex;
+    min-height: auto;
+    margin-left: 40px;
+    background-color: black;
+    align-items: flex-end;
+    color: white;
+  }
+
+  .column-right {
+    display: flex;
+    flex: 3;
+    height: 120px;
+    margin-left: 30px;
+    /* background-color: white; */
+  }
+
+  .column-left>h1 {
+    margin-left: 12px;
+    font-size: 24px;
+  }
+
+  .row-title>h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 54px;
+  }
+
+  .row-title>span {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 60px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+  }
+
+  .column-left-container {
+    padding: 24px;
+  }
+
+  .column-right-container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .job {
+    display: flex;
+    flex: 1;
+  }
+
+  .job-time {
+    flex: 1;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-right: 24px;
+  }
+
+  .job-description {
+    flex: 3
+  }
+  .flex{
+    display: flex;
+  }
+  .skill_name {
+    width: 120px;
+  }
+  .sill_levels {
+    height: 15px;
+    flex: 1;
+  }
+  .skill_percent {
+    background-color: #111;
+  }
+  .skill_empty {
+    background-color: #c5c5c5;
+    flex: 1
+  }
+  .skill_wrapper{
+    margin: 10px 0;
+  }

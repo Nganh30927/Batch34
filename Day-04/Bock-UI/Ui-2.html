@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    .bg-crimson{
+        background-color: crimson;
+    }
+    .bg-aqua{
+        background-color: rgb(87, 197, 197);
+    }
+    .bg-green{
+        background-color: green;
+    }
+    .bg-yellow{
+        background-color: rgb(231, 231, 70);
+    }
+    .bg-purple{
+        background-color: purple;
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .block-list{
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .block-list .item{
+        width: 500px;
+        padding: 10px;
+        background-color: #ddd;
+    }
+    .block-list .item .thumbnail{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .block-list .item .thumbnail img{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: -5px;
+    }
+    .block-list .label-wrapper{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        bottom: 40px;
+        left: 30px;
+        color: #fff;
+    }
+    .block-list .label-wrapper .label{
+       display: block;
+       margin-left: 30px;
+       margin-bottom: 5px;
+     
+      
+    }
+    .label-wrapper .label:first-child{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .label-wrapper .label-job{
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px 0;
+        border-bottom: 1px solid #e4dfdf;
+    }
+    .content .name-fllw{
+        text-transform: uppercase;
+        margin-left: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        color: #7d7a7a;
+    }
+    .content .number-fllw{
+        margin-right: 20px;
+        padding: 3px 8px;
+        font-size: 12px;
+        border-radius: 5px;
+        color: #fff;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <section class="section">
+            <div class="block-list">
+                <div class="item">
+                    <div class="thumbnail">
+                        
+                        <img src="img/bg.jpg" alt="">
+                        <div class="label-wrapper">
+                            <img style="width: 70px; height: auto;border:1px solid #ddd; border-radius: 50px;" src="img/avatar.jpg" alt="">
+                           <div>
+                            <span class="label">Joseph Max</span>
+                            <span class="label label-job">Web Designer</span>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <span class="name-fllw">followers</span>
+                        <span class="number-fllw bg-crimson">1,200</span>
+                    </div>
+                    <div class="content">
+                        <span class="name-fllw">followings</span>
+                        <span class="number-fllw bg-aqua">1,200</span>
+                    </div>
+                    <div class="content">
+                        <span class="name-fllw">messages</span>
+                        <span class="number-fllw bg-green">1,200</span>
+                    </div>
+                    <div class="content">
+                        <span class="name-fllw">likes</span>
+                        <span class="number-fllw bg-yellow">1,200</span>
+                    </div>
+                    <div class="content">
+                        <span class="name-fllw">comment</span>
+                        <span class="number-fllw bg-purple">1,200</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

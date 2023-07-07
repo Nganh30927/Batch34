@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .icon{
+        padding-top: 10px;
+    }
+    .icon i{
+        color: blue;
+        font-size: 1.6rem;
+        margin: 20px;
+    }
+    section .category{
+        width: 250px;
+        height: auto;
+        margin: 30px auto;
+        background-color: #dedede;
+    }
+    .category .cate-menu{
+        list-style: none;
+    }
+    .category .cate-menu a{
+        text-decoration: none;
+        color: black;
+    }
+    .cate-menu{
+        padding: 0 2rem;
+        margin-bottom: 15px;
+    }
+    .cate-menu i{
+        font-size: 1.6rem;
+        margin-right: 20px;
+    }
+    .cate-menu li a{
+        display: flex;
+        font-weight: 600;
+        align-items: center;
+        height: 47px;
+        letter-spacing: 0.01em;
+    }
+    .btn-sub{
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+        width: 150px;
+        background-color: #0caaf9;
+        color: #fff;
+        border-radius: 50px;
+        border: none ;
+        margin: 10px 50px;
+        cursor: pointer;
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <section>
+            <div class="category">
+                <div class="icon">
+                    <i class="ri-twitter-fill"></i>
+                </div>
+                <ul class="cate-menu">
+                    <li><a href="#"><i class="ri-home-gear-line"></i>Home</a></li>
+                    <li><a href="#"><i class="ri-search-line"></i>Explore</a></li>
+                    <li><a href="#"><i class="ri-notification-4-line"></i> Notifications</a></li>
+                    <li><a href="#"><i class="ri-mail-line"></i> Messages</a></li>
+                    <li><a href="#"><i class="ri-bookmark-line"></i> Bookmarks</a></li>
+                    <li><a href="#"><i class="ri-file-list-line"></i> Lists</a></li>
+                    <li><a href="#"><i class="ri-user-line"></i> Profile</a></li>
+                    <li><a href="#"><i class="ri-more-line"></i> More</a></li>
+                </ul>
+                <button class="btn-sub" type="submit">Tweet</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

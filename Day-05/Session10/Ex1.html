@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    .container{
+        width: 100%;
+        margin: 30px auto;
+    }
+    .content{
+        padding: 3rem;
+        max-width: 500px;
+        margin: 0 auto;
+        border: 0.5px solid #333;
+    }
+    .thumbnail{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        text-align: center;
+    }
+    .thumbnail img{
+        width: 230px;
+        height: 230px;
+        overflow: auto;
+        margin-bottom: 30px;
+    }
+    form input[type="text"],
+        form input[type="tel"],
+        form input[type="number"],
+        form input[type="email"],
+        form input[type="password"],
+        select,
+        textarea{
+            appearance: none;
+            padding: 8px 15px;
+            border: 1px solid  #ddd;
+            border-radius: 4px;
+        }
+    .signin_form .user-name,
+    .pass{
+        width: 400px;
+        margin: 10px 0;
+    }
+    .signin_btn{
+        width: 400px;
+        border: none;
+        padding: 10px 0;
+        font-weight: bold;
+        border-radius: 5px;
+        margin: 10px 0;
+        cursor: pointer;
+        background-color: #33CC66;
+        color: #fff;
+
+    }
+    .signin_btn:hover{
+        background-color: #77dc99;
+    }
+</style>
+<body>
+    <main class="container">
+        <div class="content">
+            <div class="thumbnail">
+                <img src="img/219969.png" alt="">
+            </div>
+            <form class="signin_form">
+                <div>
+                    <label>Username</label><br/>
+                    <input class="user-name" type="text" name="Username" id="Username" placeholder="Enter Username">
+                </div>
+                <div>
+                    <label>Password</label><br/>
+                    <input class="pass" type="password" name="Password" id="Password" placeholder="Enter Password">
+                </div>
+                <button class="signin_btn" type="submit">login</button>
+                <div class="form__footer">
+                    <span class="remember__me">
+                        <label><input type="checkbox"/> Remember me</label>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

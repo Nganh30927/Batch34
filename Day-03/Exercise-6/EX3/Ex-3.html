@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+    
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        background-color: #212121;
+    }
+    .article-wrapper{
+        max-width: 800px;
+        margin-top: 30px;
+        margin-left: 30px;
+        background-color: #ffff;
+    }
+    article{
+        display: flex;
+    }
+    article .thumb{
+        width: 40%;
+    }
+    article .thumb >img{
+        width: 320px;
+        height: auto;
+        margin: 5px;
+    }
+    article .content{
+        width: calc(100% - 40%);
+        padding-left: 30px;
+        padding-top: 20px;
+        
+    }
+    article .content .desc{
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .desc, .extras{
+        color: rgb(99, 97, 97);
+        
+    }
+</style>
+<body>
+   <div class="article-wrapper">
+        <article> <!--flex-->
+            <div class="thumb">
+                <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-460x230,f_auto,q_auto:best/rockcms/2022-07/220722-harvard-campus-ac-555p-4c79ac.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Top New Collection</h3>
+                <p class="desc">
+                    orem ipsum dolor sit amet, cosectetur adipiscing elit. Cras non placerat mi. Etian non telus sem. <br/>
+                    Aenean...
+                </p>
+                <div class="extras">
+                    <span><i class="ri-user-fill"></i>Administator</span>
+                    <span><i class="ri-calendar-todo-fill">5 day ago</i></span>
+                    <span><i class="ri-chat-1-line"></i> 6 Views</span>
+                </div>
+            </div>
+        </article>
+   </div>
+</body>
+</html>

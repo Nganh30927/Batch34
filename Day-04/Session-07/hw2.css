@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sec-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.sec-header .sec-title{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.sec-header .view-a a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: #333;
+}
+.view-a a:hover{
+    color: rgb(244, 118, 99);
+}
+
+.news{
+    display: flex;
+    justify-content: space-between;
+}
+.news article .thumbnail{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.news article .thumbnail img{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.news article{
+    width: calc((100% - 60px) /4);
+}
+
+ .content{
+    margin: 15px 0;
+}
+article >h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.news article a{
+    text-decoration: none;
+    font-weight: 600;
+    color: red;
+}
+.news article a:hover{
+    color: #ddd;
+}

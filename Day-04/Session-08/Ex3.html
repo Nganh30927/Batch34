@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@100&display=swap');
+    body{
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        background-color: #212121;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .wrapper{
+        max-width: 800px;
+        margin-top: 30px;
+        margin-left: 30px;
+        background-color: #ffff;
+    }
+    article{
+        display: flex;
+    }
+    article .thumbnail{
+     width: 300px;
+     height: auto;
+     overflow: hidden;
+    }
+    article .thumbnail img{
+        margin: 20px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    article .content{
+        width: calc(100% - 300px);
+        padding-left: 20px;
+        padding-top: 20px;
+        margin-left: 30px;
+    }
+    .content h2{
+        color: orangered;
+        font-weight: 900;
+        font-size: 25px;
+    }
+    .desc a{
+        text-decoration: none;
+        color: #212121;
+        padding: 5px;
+        border: 1px solid #333;
+    }
+    .desc a:hover{
+        background-color: aliceblue;
+    }
+    .price{
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+    }
+    .price h3{
+        color: orangered;
+        font-weight: 900;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .extract{
+        list-style: none;
+        margin: 15px 0;
+        line-height: 30px;
+
+    }
+    .btn-add{
+        border: none;
+        text-align: center;
+        color: #ffff;
+        background-color: orangered;
+        padding: 10px 0;
+        width: 150px;
+        border-radius: 5px;
+    }
+    .btn-call{
+        border: none;
+        text-align: center;
+        color: #ffff;
+        background-color: #333;
+        padding: 10px 0;
+        width: 150px;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+    .submit-btn{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <article>
+            <div class="thumbnail">
+                <img src="img/samsung-galaxy-s21-5g-P4305-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Samsung Galaxy S21 FE 5G
+                    (8GB/128GB)
+                </h2>
+                <div class="price">
+                   <h3><strong>12.490.000 &#273</strong></h3>
+                    <span><del>16.990.000 &#273</del></span>
+                </div>
+                <div class="desc">
+                    <p>Màu Sắc <a href="#">Đen</a> <a href="#">Hồng</a> <a href="#">Xanh</a></p>
+                </div>
+                <ul class="extract">
+                    <li><i class="ri-checkbox-line"></i><b>Bộ sản phẩm gồm:</b> Hộp, sách hướng dẫn, Cáp...</li>
+                    <li><i class="ri-shield-check-line"></i><b>Bảo hành: </b>12 tháng</li>
+                    <li><i class="ri-repeat-line"></i><b>Đổi trả: </b>12 tháng</li>
+                </ul>
+                <div class="submit-btn">
+                    <button class="btn-add" type="submit"><i class="ri-shopping-cart-line"></i> Thêm giỏ hàng</button>
+                    <button class="btn-call" type="check"><i class="ri-phone-fill"></i> Gọi tư vấn</button>
+                </div>
+                <p>Hoặc gọi ngay để đặt mua: 1900 1080</p>
+            </div>
+        </article>
+    </div>
+</body>
+</html>

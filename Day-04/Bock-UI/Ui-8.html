@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    :root {
+        --color-green: #4FD365;
+        --color-red: #F25753;
+        --color-blue: #3366CC;
+        --color-yellow: #FFFF00;
+        --color-purple: #660099;
+
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .section {
+        width: 500px;
+        padding: 20px;
+        margin: 30px auto;
+        border: 1px solid #333;
+    }
+
+    .bg-green {
+        background-color: var(--color-green);
+        border-radius: 3px 0 0 3px;
+    }
+
+    .bg-red {
+        background-color: var(--color-red);
+        border-radius: 3px 0 0 3px;
+    }
+    .bg-blue{
+        background-color: var(--color-blue);
+        border-radius: 3px 0 0 3px;
+    }
+    .bg-yellow{
+        background-color: var(--color-yellow);
+        border-radius: 3px 0 0 3px;
+    }
+    .bg-purple{
+        background-color: var(--color-purple);
+        border-radius: 3px 0 0 3px;
+    }
+
+    .skill_bar {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .skill_bar .label_icon {
+        font-size: 23px;
+        color: #fff;
+        border-radius: 2px;
+        margin-right: 5px;
+
+    }
+
+    .skill_bar .label {
+        width: 120px;
+    }
+
+    .skill_process {
+        flex: 1;
+        background-color: #ddd;
+        height: 20px;
+        border-radius: 4px;
+        display: flex;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <section class="section">
+            <div class="skill_bar">
+                <div class="label">
+                    <span class="label_icon bg-green"><i class="ri-android-line"></i></span>
+                    <span class="label_name">Html</span>
+                </div>
+                <div class="skill_process">
+                    <div class="percent bg-green" style="width: 60%;">
+                    </div>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="label">
+                    <span class="label_icon bg-red"><i class="ri-apple-line"></i></span>
+                    <span class="label_name">CSS</span>
+                </div>
+                <div class="skill_process">
+                    <div class="percent bg-red" style="width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="label">
+                    <span class="label_icon bg-blue"><i class="ri-dropbox-line"></i></span>
+                    <span class="label_name">PHP</span>
+                </div>
+                <div class="skill_process">
+                    <div class="percent bg-blue" style="width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="label">
+                    <span class="label_icon bg-yellow"><i class="ri-dribbble-fill"></i></span>
+                    <span class="label_name">Java</span>
+                </div>
+                <div class="skill_process">
+                    <div class="percent bg-yellow" style="width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="label">
+                    <span class="label_icon bg-purple"><i class="ri-evernote-line"></i></span>
+                    <span class="label_name">.Net</span>
+                </div>
+                <div class="skill_process">
+                    <div class="percent bg-purple" style="width: 40%;"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

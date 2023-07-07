@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // let x = parseInt(prompt('Nhập điểm trung bình: '));
+
+        // if(x >= 8){
+        //     console.log('Xếp loại giỏi');
+        // }
+        // else if(x >= 6.5 && x < 8){
+        //     console.log('Xếp loại khá');
+        // }
+        // else if(x >= 5 && x <= 6){
+        //     console.log('Xếp loại trung bình');
+        // }
+        // else{
+        //     console.log('Xếp loại yếu')
+        // }
+
+
+        //TASK3
+        //   let x = parseInt(prompt('Nhập một tháng bất kỳ: '));
+
+        //   switch(x){
+        //     case 1:
+        //     case 2:
+        //     case 3: 
+        //         console.log('XUAN');
+        //         break;
+        //     case 4:       
+        //     case 5:       
+        //     case 6:
+        //         console.log('HA');
+        //         break;
+        //     case 7:       
+        //     case 8:       
+        //     case 9:
+        //         console.log('THU');
+        //         break;
+        //     case 10:           
+        //     case 11:           
+        //     case 12:
+        //         console.log('DONG');
+        //         break;
+        //     default:
+        //         console.log('error???????')
+
+        //   }
+
+        // TASK4
+        for (let i = 6; i >= 1; i--) {
+            let x = '';
+
+            for (let j = 1; j <= i; j++) {
+                x += '*';
+            }
+            console.log(x);
+        }
+        // TASK5
+        // for (let i = 1; i <= 9; i++) {
+        //     console.log(`Bảng cửu chương ${i}:`);
+
+        //     for (let j = 1; j <= 10; j++) {
+        //         let z = i * j;
+        //         console.log(`${i} x ${j} = ${z}`);
+        //     }
+
+        //     console.log('==============');
+        // }
+
+        // TASK 2
+        let soDien = parseInt(prompt('Nhập số điện tiêu thụ'));
+
+       if(soDien<0){
+        console.log('Số điện không được nhỏ hơn 0');
+       }else if (soDien <= 100){
+         gia=soDien*550;
+        // console.log(`Số tiền phải trả: ${gia} đồng` );
+       }else if(soDien <= 150){
+        gia=100*550+((soDien-50)*900);
+        // console.log(`Số tiền phải trả: ${gia} đồng` );
+       }else if(soDien <= 200){
+        gia=100*550+(50*900)+((soDien-50)*1210);
+        // console.log(`Số tiền phải trả: ${gia} đồng` );
+       }else  if(soDien <= 300){
+        gia=100*550+(50*900)+(50*1210)+((soDien-100)*1340);
+        // console.log(`Số tiền phải trả: ${gia} đồng` );
+       }else {
+        gia=100*550+(50*900)+(50*1210)+(100*1340)+((soDien-300)*1400);
+        // console.log(`Số tiền phải trả: ${gia} đồng` );
+       }
+       console.log(`Số tiền cần trả cho ${soDien} số: ${gia} đồng` );
+       
+        // TASK6
+
+        // let price = 1000000;
+
+        // function atm() {
+        //     const chuongTrinh = prompt(
+        //         "VIRTUAL ATM\n An N: De nop tien\n An R: De rut tien\n An X: De xem so du\n Vui long chon chuc nang:"
+        //     );
+
+        //     switch (chuongTrinh) {
+        //         case 'N':
+
+        //             const tienNop = parseInt(prompt('Nhap so tien can nop:'));
+        //             if (isNaN(tienNop) || tienNop <= 0) {
+        //                 console.log('So tien khong hop le.');
+        //                 break;
+        //             }
+        //             price += tienNop;
+        //             console.log(`Ban vua nap ${tienNop} VND. So du cua ban la: ${price} VND`);
+        //             break;
+
+        //         case 'R':
+        //             const tienRut = parseInt(prompt("Nhap so tien can rut:"));
+        //             if (isNaN(tienRut) || tienRut <= 0) {
+        //                 console.log('So tien khong hop le.');
+        //                 break;
+        //             }
+        //             if (tienRut % 50000 !== 0) {
+        //                 console.log('So tien khong phai la boi so cua 50.000 VND.');
+        //                 break;
+        //             }
+        //             if (tienRut > price) {
+        //                 console.log('So tien trong tai khoan khong du.');
+        //                 break;
+        //             }
+        //             price -= tienRut;
+        //             console.log(`Ban vua rut ${tienRut} VND. So du cua ban la: ${price} VND`);
+        //             break;
+
+        //         case 'X':
+        //             console.log(`So du trong tai khoan cua ban la: ${price} VND`);
+        //             break;
+        //         case 'Q':
+        //             console.log('Thoát chương trình');
+        //             break;
+        //         default:
+        //             console.log('Chuc nang khong hop le.');
+        //             break;
+        //     }
+        // }
+        
+    </script>
+</body>
+
+</html>

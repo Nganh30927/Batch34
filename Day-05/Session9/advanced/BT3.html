@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    .container{
+       width: 1200px;
+        margin: 30px auto;
+    }
+    .section{
+        margin: 0 40px;
+    }
+    table{
+        width: 100%;
+    }
+    table, tr, td, th{
+        border-collapse: collapse;
+        border: 0.5px solid #8a8484;
+    }
+
+    th, td{
+        padding: 15px 15px;
+        color: #ffffff;
+    }
+    tr td{
+        color: #888585;
+        font-size: 13px;
+    }
+    tr:first-child th{
+        font-weight: 500;
+        color: orange;
+        background-color: rgb(31, 31, 80);
+    }
+    tr th:first-child{
+        background-color: #fff;
+    }
+    td:first-child{
+        font-weight: 500;
+        font-size: 15px !important;
+        color: #000000;
+    }
+
+    tr:last-child td{
+       text-align: center;
+    }
+    tr:nth-child(2n+8) td{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    tr th .scope{
+        color: rgb(246, 28, 72);
+        font-size: 12px;
+        vertical-align: top;
+        margin-left: 5px;
+        
+    }
+    tr  button{
+        padding: 10px 0;
+        width: 100%;
+        font-weight: 500;
+        color: orange;
+        background-color: rgb(29, 29, 114);
+        border: none;
+        border-radius: 3px;
+    }
+    .sec-header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .sec-header h2{
+        font-weight: 500;
+        color: rgb(5, 5, 82);
+    }
+    .btn-header button{
+        padding: 10px 0;
+        border: none;
+        color: #5c5b5b;
+        width: 100px;
+    }
+    .btn-header button:first-child{
+        margin-right: -5px;
+        border-radius: 3px 0 0 3px;
+        color: aliceblue;
+        background-color: rgb(2, 2, 81);
+    }
+    .btn-header button:last-child{
+        border-radius: 0 3px 3px 0;
+        background-color: #cfcfcf;
+        border-left: 1px solid snow;
+    }
+
+    .section p{
+        margin: 20px 0;
+        font-weight: 300;
+        color: #cfcfcf;
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <section class="section">
+            <p>CURRENTLY AVALABLE</p>
+            <div class="sec-header">
+                <h2>Pricing Tables</h2>
+                <div class="btn-header">
+                    <button type="button">Individual</button>
+                    <button type="button">Enterprise</button>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Basic</th>
+                    <th>Starter</th>
+                    <th>Business</th>
+                    <th>Unify <span class="scope">*Popular</span></th>
+                    <th>Extreme</th>
+                </tr>
+                <tr>
+                    <td>Domains</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Wordpress</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Page Builder</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Pages</td>
+                    <td>200</td>
+                    <td>225</td>
+                    <td>275</td>
+                    <td>300</td>
+                    <td>400+</td>
+                </tr>
+                <tr>
+                    <td>Elements</td>
+                    <td>200</td>
+                    <td>350</td>
+                    <td>500</td>
+                    <td>900</td>
+                    <td>1600+</td>
+                </tr>
+                <tr>
+                    <td>Support</td>
+                    <td>1 month</td>
+                    <td>4 months</td>
+                    <td>8 months</td>
+                    <td>1 Year</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>&dollar;19.00</td>
+                    <td>&dollar;29.00</td>
+                    <td>&dollar;39.00</td>
+                    <td>&dollar;49.00</td>
+                    <td>&dollar;99.00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="button">PURCHASE <i class="ri-arrow-right-s-line"></i></button></td>
+                    <td><button type="button">PURCHASE <i class="ri-arrow-right-s-line"></i></button></td>
+                    <td><button type="button">PURCHASE <i class="ri-arrow-right-s-line"></i></button></td>
+                    <td><button type="button">PURCHASE <i class="ri-arrow-right-s-line"></i></button></td>
+                    <td><button type="button">PURCHASE <i class="ri-arrow-right-s-line"></i></button></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>

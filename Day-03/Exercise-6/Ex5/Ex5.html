@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: 0;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        background-color: #212121;
+    }
+    .article-wrapper{
+        max-width: 900px;
+        margin-top: 30px;
+        margin-left: 30px;
+        background-color: #ffff;
+    }
+    article{
+        display: flex;
+    }
+    article .thumb{
+        width: 40%;
+        margin: 5px;
+    }
+    article .thumb >img{
+        width: 350px;
+        height: auto;
+    }
+    article .content{
+        width: calc(100% - 40%);
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    h3{
+        color: orange;
+        margin: 10px 0;
+    }
+    article .content .desc{
+        margin: 15px 0;
+    }
+
+    .desc{
+        color: rgb(103, 104, 105);
+    }
+</style>
+<body>
+    <div class="article-wrapper">
+        <article>
+            <div class="thumb">
+                <img src="https://www.zensurance.com/wp-content/uploads/2022/06/Electricianworking.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Our Services </h3>
+                <h1>Responsive & Professional</h1>
+                <p class="desc">
+                    We go the extra mile on every project. The value we provide clients comes from <br/>
+                    our level of skill and prformance, as well as our knowledge and professionalism. <br/>
+                    Rest assured, we put the same level of energy into every project we take om.
+                </p>
+                <div class="extras">
+                    <p><b>Call us today</b></p>
+                    <h3><i class="ri-phone-fill"></i>1900-111000</h3>
+                    <p>We're avallable 24/7, 365 days a year.</p>
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 50px;
+        height: 50px;
+        border: 1px solid #333;
+        margin: 20px;
+    }
+</style>
+<body>
+    <div  onmouseover="console.log('Bạn đã rê chuột lên hình vuông')" class="box" id="boxId" onclick="btn_color() "></div>
+
+    <button id="btn-add" onclick="addcart()" type="button">Add cart</button>
+    <button id="btn-del" onclick="del_button()"  type="button">Delete</button>
+    <input type="text" id="text_onkey" onkeypress="onKeyPress()" onkeyup="onKeyUp()">
+    <script>
+        // TASK1
+        // let user = prompt("Nhập tên của bạn");
+        // let passwork = prompt("Nhập mật khẩu của bạn");
+
+        // console.log('Tên của bạn là:' + user);
+        // console.log('Mật khẩu của bạn là:' + passwork);
+
+
+
+        // TASK2
+        // let a = prompt("Nhập giá trị a");
+        // let b = prompt("Nhập giá trị b");
+
+        // console.log('a + b', parseInt(a) + parseInt(b));
+        // console.log('a - b', parseInt(a) - parseInt(b));
+
+        // TASK3
+       function del_button(){
+        const isConfirm = confirm("Bạn có chắc chắn muốn xóa record này không ?");
+        console.log('Bạn đã chọn', isConfirm);
+       }
+
+        //TASK4
+        function btn_color(){
+            document.getElementById("boxId").style.backgroundColor = "yellow";  
+           
+        }
+        // TASK5
+    //    let getInput = prompt("Nhập giá trị");
+
+    //     if (isNaN(getInput)) {
+    //     console.log("Giá trị nhập vào không phải là số.");
+    //     } else {
+    //     console.log("Giá trị nhập vào là số.");
+    //     }
+
+        //TASK6
+        function addcart(){
+            document.getElementById("btn-add").addEventListener("click",
+            function(){
+                alert('Đã thêm vào giỏ hàng!')
+            });
+        }
+
+        //TASK7
+        function onKeyDown() {
+            let x = document.getElementById("text_onkey");
+            console.log("Ban vua nhan xuong: ", x.value);
+        }
+        function onKeyPress() {
+            let x = document.getElementById("text_onkey");
+            console.log("Ban vua nhan phim: ", x.value);
+        }
+        function onKeyUp() {
+            let x = document.getElementById("text_onkey");
+            console.log("Ban da roi tay khoi phim: ", x.value.toUpperCase());
+        }
+
+    </script>
+</body>
+
+</html>

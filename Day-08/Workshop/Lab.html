@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="a" id="a">
+    <input type="text" name="b" id="b">
+    <select name="pheptinh" id="pheptinh">
+        <option value="add">Cộng</option>
+        <option value="subtract">Trừ</option>
+        <option value="multiply">Nhân</option>
+        <option value="divide">Chia</option>
+        <option value="modulus">Chia lấy dư</option>
+    </select>
+    <button onclick="cal()">Tính kết quả</button>
+    <div id="result"></div>
+    <script>
+
+        // let a = 8;
+        // let b = 2;
+
+
+        // // console.log(a + b);
+        // // console.log(a - b);
+        // // console.log(a * b);
+        // // console.log(a / b);
+
+        // function add(a, b) {
+        //     return a + b;
+        // }
+        // console.log(add(a, b));
+
+        // function subtract(a, b) {
+        //     return a - b;
+        // }
+        // console.log(subtract(a, b));
+
+        // function multiply(a, b) {
+        //     return a * b;
+        // }
+        // console.log(multiply(a, b));
+
+        // function divide(a, b) {
+
+        //     return a / b;
+        // }
+        // console.log(divide(a, b));
+
+        //TASK3
+        // function cal(a, b, type) {
+        //     let result = 0;
+        //     if (type == 'add') {
+        //         result = a + b;
+        //     } else if (type == 'sub') {
+        //         result = a - b;
+        //     } else if (type == 'mul') {
+        //         result = a * b;
+        //     } else if (type == 'div') {
+        //         result = a / b;
+        //     }
+        //     return result;
+        // }
+
+        // console.log(cal(4, 2, 'add'));
+        // console.log(cal(4, 2, 'sub'));
+        // console.log(cal(4, 2, 'mul'));
+        // console.log(cal(4, 2, 'div'));
+        
+        // TASK2
+        // function cal(){
+        //     console.log('tính');
+        //     let a = document.querySelector('input#a').value;
+        //     let b = document.querySelector('input#b').value;
+        //     let pheptinh = document.querySelector('#pheptinh').value;
+
+        //     console.log(a, b, pheptinh);
+
+        //     a = parseInt(a);
+        //     b = parseInt(b);
+
+        //     let result = 0;
+        //     if(pheptinh == 'add'){
+        //         result = a + b;
+        //     }
+        //     else if(pheptinh == 'subtract'){
+        //         result = a - b;
+        //     }
+        //     else if(pheptinh == 'multiply'){
+        //         result = a * b;
+        //     }
+        //     else if(pheptinh == 'divide'){
+        //         result = a / b;
+        //     }
+        //     else if(pheptinh == 'modulus'){
+        //         result = a % b;
+        //     }
+
+
+        //     console.log(result);
+            
+        //     document.querySelector("#result").innerText = result;
+        // }
+
+        // // TASK4
+        // let objStudent = function(name, age, gender, birth, height, weight, nationality){
+        //     this.name = name;
+        //     this.age = age;
+        //     this.gender = gender;
+        //     this.birth = birth;
+        //     this.height = height;
+        //     this.weight = weight;
+        //     this.nationality = nationality;
+        // }
+        // let studentA = new objStudent('A', 22, 'male', '20/11/2001', 1.75, 70, 'VietNam');
+        // let studentB = new objStudent('B', 22, 'female', '11/04/2001', 1.60, 45, 'VietNam');
+
+        // console.log(studentA);
+        // console.log(studentB);
+
+        // TASK5
+        let userNgoc ={
+            id: 1,
+            name: 'Trông Anh Ngược',
+            email: 'ngoc@gmail.com',
+            gender: 'male'
+        }
+        console.log(userNgoc);
+
+        userNgoc.name = 'Tranh Ông Ngược';
+        console.log(userNgoc);
+        let userNgot = {...userNgoc, role: 'admin'}
+        console.log(userNgot);
+
+        let mergedUser = {...userNgoc, ...userNgot};
+        console.log(mergedUser);
+
+    </script>
+</body>
+
+</html>

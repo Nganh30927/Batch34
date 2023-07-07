@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .bg-brown{
+    background-color: brown;
+  }
+  .bg-brown-per{
+    background-color: rgb(202, 95, 95);
+  }
+  .bg-aqua{
+    background-color: #00CCCC;
+  }
+  .bg-aqua-per{
+    background-color: aqua;
+  }
+  .bg-green{
+    background-color: #00CC33;
+  }
+  .bg-green-per{
+    background-color: #3cdb64;
+  }
+  .bg-yellow{
+    background-color: rgb(181, 181, 31);
+  }
+  .bg-yellow-per{
+    background-color: yellow;
+  }
+  .bg-purple{
+    background-color: rgb(119, 32, 119);
+  }
+  .bg-purple-per{
+    background-color: rgb(158, 84, 158);
+  }
+  .bg-violet{
+    background-color: rgb(159, 74, 110);
+  }
+  .bg-violet-per{
+    background-color: rgb(251, 49, 174);
+  }
+  .bg-blue{
+    background-color: rgb(71, 71, 141);
+  }
+  .bg-blue-per{
+    background-color: rgb(79, 79, 204);
+  }
+  .container{
+    max-width: 100%;
+    margin: 30px auto;
+  }
+  .skill_bar{
+    height: 40px;
+    background-color: #dcd9d9;
+    display: flex;
+    margin: 10px 0;
+  }
+  .section {
+        width: 600px;
+        padding: 20px;
+        margin: 30px auto;
+        border: 1px solid #333;
+    }
+  .skill_bar .label_name{
+    flex-basis: 160px;
+    color: #fff;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill_bar .skill_process{
+    display: flex;
+    color: #fff;
+    height: 100%;
+    flex: 1;
+  }
+  .skill_bar .skill_process .percent{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .skill_bar .skill_process .label{
+    flex: 1;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <section class="section">
+      <div class="skill_bar">
+        <div class="label_name bg-brown">BANDWIDTH</div>
+        <div class="skill_process">
+          <div class="percent bg-brown-per" style="width: 20%;">20%</div>
+          <div class="label"></div>
+        </div>
+      </div>
+      <div class="skill_bar">
+        <div class="label_name bg-aqua">STORAGE</div>
+        <div class="skill_process">
+          <div class="percent bg-aqua-per" style="width: 50%;">50%</div>
+          <div class="label"></div>
+        </div>
+      </div>
+      <div class="skill_bar">
+        <div class="label_name bg-green">USERS</div>
+        <div class="skill_process">
+          <div class="percent bg-green-per" style="width: 70%;">70%</div>
+          <div class="label"></div>
+        </div>
+      </div>
+      <div class="skill_bar">
+        <div class="label_name bg-yellow">VISITORS</div>
+        <div class="skill_process">
+          <div class="percent bg-yellow-per" style="width: 30%;">30%</div>
+          <div class="label"></div>
+        </div>
+      </div>
+      <div class="skill_bar">
+        <div class="label_name bg-purple">EMAIL</div>
+        <div class="skill_process">
+          <div class="percent bg-purple-per" style="width: 45%;">45%</div>
+          <div class="label"></div>
+        </div>
+      </div>
+      <div class="skill_bar">
+        <div class="label_name bg-violet">BASIC</div>
+        <div class="skill_process">
+          <div class="percent bg-violet-per" style="width: 80%;">80%</div>
+          <div class="label"></div>
+        </div>
+      </div>
+      <div class="skill_bar">
+        <div class="label_name bg-blue">OTHER</div>
+        <div class="skill_process">
+          <div class="percent bg-blue-per" style="width: 37%;">37%</div>
+          <div class="label"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

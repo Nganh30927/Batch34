@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn-del" onclick="del_button()"  type="button">Delete</button>
+    <script>
+        // TASK1
+        //  let user = prompt('Nhập username:');
+        //  let pass = prompt('Nhập passwork:');
+        //  do{
+        //     if(user === 'aptech' || pass === '38yenbai'){
+        //         alert('Bạn đã đăng nhập thành công')
+        //         console.log('Bạn đã đăng nhập thành công');
+        //         break;
+
+        //     }else{
+        //         alert('Tài khoản hoặc mật khẩu không đúng');
+        //         console.log('Tài khoản hoặc mật khẩu không đúng');
+        //        break;
+        //     }
+
+        //  } while(user !== 'aptech' && pass !== '38yenbai');
+
+        // TASK2
+        // let deleteBtn = document.getElementById("btn-del");
+
+        // function del_button(){
+        //     if(confirm('Bạn có chắc chắn muốn xóa record này không ?')){
+        //     alert('Đã xoá');
+        //     console.log('Đã xoá');
+        //     }else{
+        //         alert('Không xoá');
+        //         console.log('không xoá');
+        //     }
+        // }
+
+        //TASK3
+        // let myArr=[ 1, 2, 3, 4, 5 ];
+        // console.log(myArr[0]);
+        // myArr.push(6);
+        // console.log(myArr);
+        // console.log(myArr.length);
+
+        // for(let i = 0; i < myArr.length; i++){
+        //     console.log(myArr[i]);
+        // }
+
+        // TASK 4
+         let myCar= ['toyota', 'audi', 'lambo', 'honda', 'bugatti'];
+         
+        //  myCar[2]= 'BMW';
+         myCar.splice(2, 1, 'BMW');
+         console.log(myCar);
+         
+         let myNewCar=[...myCar, 'kia'];
+         console.log(myNewCar);
+
+         let newCar = myCar.concat(myNewCar);
+         console.log(newCar)
+
+         
+    </script>
+</body>
+</html>

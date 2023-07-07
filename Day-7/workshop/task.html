@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="myArr"></p>
+    <script>
+        // let x = parseInt(prompt('Nhập số bất kỳ: '));
+
+        // if(x % 2 === 0){
+        //     console.log(`${x} là số chẵn`);
+        // }
+        // else{
+        //     console.log(`${x} là số lẻ`);
+        // }
+
+        // TASK2
+
+        // let day = parseInt(prompt('Nhập ngày trong tuần'));
+
+        // switch(day){
+        //     case 2: case 3:
+        //     console.log('Hôm nay là đầu tuần');
+        //     break;
+        //     case 4: case 5: case 6:
+        //     console.log('Hôm nay là giữa tuần');
+        //     break;
+        //     case 7: case 8:
+        //     console.log('Hôm nay là cuối tuần');
+        //     break;
+        //     default:
+        //         console.log('số ngày không hợp lệ');
+        //         break;        
+        // }
+
+        // TASK 3
+
+        let myArr = ['Thứ 2', 'Thứ y', 'Thứ 3', 'Thứ x', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
+        console.log(myArr)    
+        // myArr[7] = 'Chủ nhật';    
+        myArr.push('Chủ nhật');
+        console.log(myArr);
+        myArr.splice( 3, 1, 'Thứ 4');
+        console.log(myArr);
+        document.getElementById("demo1").innerHTML = myArr;
+        myArr.splice(1,1);
+        console.log(myArr);
+        document.getElementById("myArr").innerHTML = myArr;
+    </script>
+</body>
+</html>
