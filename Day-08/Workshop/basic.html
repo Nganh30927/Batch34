@@ -1,139 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
+  </head>
+  <style>
     table {
-        border-collapse: collapse;
-        width: 60%;
+      border-collapse: collapse;
+      width: 60%;
     }
 
     table tr td,
     table tr th {
-        border: 1px solid #333;
-        padding: 10px;
+      border: 1px solid #333;
+      padding: 10px;
     }
-</style>
+  </style>
 
-<body>
-    <label for="">Số lượng:</label>
-    <input type="number" name="quantity" id="quality" value="1">
-    <label for="">Giá:</label>
-    <input type="number" name="price" id="price" value="0">
-    <label for="">Thành tiền:</label>
-    <div id="total"></div><br />
-    <button id="increase" onclick="increaseQ()">Tăng</button>
-    <button id="reduce" onclick="decreaseQ()">Giảm</button>
+  <body>
+    <label>Số lượng:</label>
+	<input type="number" id="quantity" value="1" min="1">
 
+	<label>Giá:</label>
+	<input type="number" id="price" value="0" min="0">
 
+	<button onclick="prodTotal()">COunt</button>
+
+    <div><label id="result">Thành tiền:</label></div>
+
+	<button onclick="increaseQ()">Tăng số lượng</button>
+	<button onclick="decreaseQ()">Giảm số lượng</button>
+
+    
     <ul id="list">
-        <li class="child_one">Child 1</li>
-        <li class="child_two">
-            <img src="images/photo.png" alt="photo"/>
-        </li>
-        <li class="child_three"><a href="link3">Child 3</a></li>
+      <li class="child_one">Child 1</li>
+      <li class="child_two">
+        <img src="images/photo.png" alt="photo" />
+      </li>
+      <li class="child_three"><a href="link3">Child 3</a></li>
     </ul>
 
     <input placeholder="username" type="text" name="username" value="" />
-    <input  placeholder="password" type="text" name="password" value="" />
-   
+    <input placeholder="password" type="text" name="password" value="" />
 
-   <script>
+    <script>
+	function prodTotal() {
+			let quantity = parseInt(document.querySelector("#quantity").value);
+			let price = parseFloat(document.querySelector("#price").value);
+			let total = quantity * price;
+            console.log(total);
+			let labelResult = document.querySelector("#result").innerHTML = total;
+		}
 
-        // let quantityiput = document.querySelector('input#quantity');
-        // let priceiput = document.querySelector('input#price');
-        // let totaldiv = document.querySelector('#total');
-        // let increasebtn = document.querySelector('button#increase');
-        // let reducebtn = document.querySelector('button#reduce');
-        // function cal() {
-        //     let quantity = parseInt(quantityiput.value);
-        //     let price= parseInt(priceiput.value);
-        //     let total = quantity * price;
+		function increaseQ() { 
+			let quantity = parseInt(document.querySelector("#quantity").value);
+			document.querySelector("#quantity").value = quantity + 1; //số lượng tăng 1 giá trị
+			prodTotal();
+		}
 
-        //     document.querySelector('#total').innerText = totaldiv;
-        // }
-        // function increaseQ() {
-        //     let quantity = parseInt(quantityiput.value);
-        //     quantityiput.value = quantity + 1;
-        //     cal();
-        // }
+		function decreaseQ() {
+			let quantity = parseInt(document.querySelector("#quantity").value);
+			if (quantity > 1) { //kiểm tra số lượng nếu > 1 sẽ giảm 1 giá trị \ giá trị không thay đổi  
+				document.querySelector("#quantity").value = quantity - 1;
+				prodTotal();
+			}
+		}
+      // TASK2
+      // const users = [
+      //     { id: 1, name: 'iPhone 12 Pro Max', price: 250000000, quanlity: 1 },
+      //     { id: 2, name: 'Samsung Galaxy S21', price: 32000000, quanlity: 1 },
+      //     { id: 3, name: 'Xiaomi Note 11', price: 18000000, quanlity: 2 },
+      //     { id: 4, name: 'Galaxy Ford Pro', price: 47000000, quanlity: 1 },
+      //     { id: 5, name: 'OPPO Find N2 Flip 5G', price: 19990000, quanlity: 3 }
+      // ];
 
-        // function decreaseQ() {
-        //     let quantity = parseInt(quantityiput.value);
-        //     if (quantity > 1) {
-        //         quantityiput.value = quantity - 1;
-        //         cal();
-        //     }
-        // }
+      // let htmlOrder = '<table>';
+      // let totalOrder = 0;
+      // htmlOrder += `<tr><td>Ma SP</td><td>Ten SP</td><td>Gia</td><td>So luong</td><td>Thanh tien</td></tr>`
 
+      // for (let index = 0; index < users.length; index++) {
+      //     const element = users[index];
+      //     let Amount = element.quanlity * element.price;
+      //     totalOrder += Amount;
 
-        // TASK2
-        // const users = [
-        //     { id: 1, name: 'iPhone 12 Pro Max', price: 250000000, quanlity: 1 },
-        //     { id: 2, name: 'Samsung Galaxy S21', price: 32000000, quanlity: 1 },
-        //     { id: 3, name: 'Xiaomi Note 11', price: 18000000, quanlity: 2 },
-        //     { id: 4, name: 'Galaxy Ford Pro', price: 47000000, quanlity: 1 },
-        //     { id: 5, name: 'OPPO Find N2 Flip 5G', price: 19990000, quanlity: 3 }
-        // ];
+      //     htmlOrder += `<tr><td>${element.id}</td><td>${element.name}</td><td>${element.price}</td><td>${element.quanlity}</td><td>${Amount}</td></tr>`
 
-        // let htmlOrder = '<table>';
-        // let totalOrder = 0;
-        // htmlOrder += `<tr><td>Ma SP</td><td>Ten SP</td><td>Gia</td><td>So luong</td><td>Thanh tien</td></tr>`
+      // }
+      // htmlOrder += `<tr><td colspan="4">Total</td><td>${totalOrder}</td></tr>`;
 
-        // for (let index = 0; index < users.length; index++) {
-        //     const element = users[index];
-        //     let Amount = element.quanlity * element.price;
-        //     totalOrder += Amount;
+      // htmlOrder += '</table>';
+      // console.log(htmlOrder);
+      // document.write(htmlOrder);
 
-        //     htmlOrder += `<tr><td>${element.id}</td><td>${element.name}</td><td>${element.price}</td><td>${element.quanlity}</td><td>${Amount}</td></tr>`
+      // TASK3
+      let ul = document.querySelector("ul#list");
 
-        // }
-        // htmlOrder += `<tr><td colspan="4">Total</td><td>${totalOrder}</td></tr>`;
+      ul.classList.add("list");
+      console.log(ul);
 
-        // htmlOrder += '</table>';
-        // console.log(htmlOrder);
-        // document.write(htmlOrder);
+      let Child_1 = document.querySelector("li.child_one");
+      console.log(Child_1);
 
+      let img = document.querySelector("#list .child_two img");
+      console.log(img);
 
-        // TASK3
-       let ul = document.querySelector('ul#list');
-       
-        ul.classList.add('list');
-        console.log(ul);
+      img.src = "image/expressjs.png";
+      img.alt = "new photO";
 
-        let Child_1 = document.querySelector('li.child_one');
-        console.log(Child_1);
+      console.log(img);
 
-        let img = document.querySelector('#list .child_two img')
-        console.log(img);
-         
-        img.src = 'image/expressjs.png';
-        img.alt = 'new photO';
+      let Child_3 = document.querySelector("li.child_three");
+      console.log(Child_3);
+      //TASK4
+      let inputuser = document.querySelector('input[placeholder="username"]');
+      let inputpass = document.querySelector('input[placeholder="password"]');
 
-        console.log(img);
+      inputuser.value = "My-user";
+      inputpass.value = "My-Pass";
 
-        let Child_3  = document.querySelector('li.child_three');
-        console.log(Child_3);
-        //TASK4
-        let inputuser = document.querySelector('input[placeholder="username"]');
-        let inputpass = document.querySelector('input[placeholder="password"]');
+      console.log(inputuser.value);
+      console.log(inputpass.value);
 
-        inputuser.value = 'My-user';
-        inputpass.value = 'My-Pass';
+      inputuser.id = "username";
+      inputpass.id = "passwork";
 
-        console.log(inputuser.value);
-        console.log(inputpass.value)
-
-        inputuser.id = 'username';
-        inputpass.id = 'passwork';
-
-        console.log(inputuser);
-        console.log(inputpass);
+      console.log(inputuser);
+      console.log(inputpass);
     </script>
-</body>
-
+  </body>
 </html>
