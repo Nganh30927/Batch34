@@ -1,0 +1,70 @@
+:root{
+    --main-color: #ff6700;
+    --white-color: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #111;
+    transition: all 0.3 linear;
+}
+body{
+    font-size: 16px;
+    color: #111;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex-item{
+    display: flex;
+}
+
+/* =====HEADER======= */
+header{
+    padding: 20px 0;
+    background-color: var(--main-color);
+}
+
+header .header-nav{
+    justify-content: space-between;
+}
+
+header .logo, .header-nav nav ul > li >a{
+    color: var(--white-color);
+}
+
+nav ul{
+    column-gap: 15px;
+}
+
+
+/* ====MAIN=== */
+main{
+    min-height: 550px;
+}
+/* ===FOOTER=== */
+footer{
+    background-color: #212121;
+    color: var(--white-color);
+    padding: 30px 0;
+}
+
+footer .footer-wrapper .item{
+    width: calc(100% / 4);
+    /*flex: 1; moi the con dc 1 phan bang nhau = calc(100% / 4)*/
+}
+
+#toogle-moblie{
+    display: none;
+}
