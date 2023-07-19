@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img height="28" src="http://egotype.design/work/web/html/fibre/demo/images/logo-blue.png"
+                            alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#service">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#function">Function</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pricing">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <span class="btn bg-main-color text-white rounded-circle">
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="mt-5">
+        <section class="bg-body-tertiary py-5" id="large-banner">
+            <div class="container">
+                <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="true">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousels" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mask flex-center">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-7 col-12 order-md-1 order-2">
+                                            <h4>iPhone XS</h4>
+                                            <p>This has many features that are simply awesome. The phone comes with a
+                                                3.50-inch display with a resolution of 320x480 pixels.</p> <br> <a
+                                                href="#">BUY NOW</a>
+                                        </div>
+                                        <div class="col-md-5 col-12 order-md-2 order-1"><img
+                                                src="http://egotype.design/work/web/html/fibre/demo/images/hero-devices-4-1.png"
+                                                class="mx-auto" alt="slide"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="mask flex-center">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-7 col-12 order-md-1 order-2">
+                                            <h4>HP Pavillion</h4>
+                                            <p>This has many features that are simply awesome.The phone comes with a
+                                                3.50-inch display with a resolution of 320x480 pixels.</p> <br> <a
+                                                href="#">BUY NOW</a>
+                                        </div>
+                                        <div class="col-md-5 col-12 order-md-2 order-1"><img
+                                                src="https://i.imgur.com/tVBy5Q0.png" class="mx-auto" alt="slide"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-sevices py-5">
+            <div class="container">
+                <h2 class="text-center" id="service">It's Awesome</h2>
+
+                <div class="row mt-5 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col">
+                        <div class="item text-center">
+                            <i class="ri-smartphone-line"></i>
+                            <h3 class="fs-5">Full Responsive</h3>
+                            <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped erae rendipsa
+                                nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid quidestia vent.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item text-center">
+                            <i class="ri-tools-line"></i>
+                            <h3 class="fs-5">Easy Customise</h3>
+                            <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped erae rendipsa
+                                nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid quidestia vent.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item text-center">
+                            <i class="ri-git-merge-line"></i>
+                            <h3 class="fs-5">Clean Design</h3>
+                            <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped erae rendipsa
+                                nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid quidestia vent.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item text-center">
+                            <i class="ri-file-2-line"></i>
+                            <h3 class="fs-5">Multiple Concepts</h3>
+                            <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped erae rendipsa
+                                nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid quidestia vent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-function py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col wrapper-v-lg">
+                        <div class="photo-function">
+                            <img class="img-fluid"
+                                src="http://egotype.design/work/web/html/fibre/demo/images/function-1-device.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col wrapper-v-lg">
+                        <div class="content">
+                            <h2 id="function" class="mb-4">How it works</h2>
+                            <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped erae rendipsa
+                                nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid quidestia vent.</p>
+
+                            <div class="row mt-4">
+                                <div class="col-xs-6 w-50 wrapper-v-lg">
+                                    <i class="ri-global-line"></i>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore</p>
+                                </div>
+                                <div class="col-xs-6 w-50 wrapper-v-lg">
+                                    <i class="ri-computer-line"></i>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore</p>
+                                </div>
+                            </div>
+
+                            <div class="wrapper-v-lg">
+                                <a class="btn btn-primary rounded-pill" href="#">More Details</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-tertiary functionality">
+            <div class="container">
+                <div class="row wrapper-v-lg">
+                    <div class="col col-md-6 col-sm-12  wrapper-v-lg">
+                        <div class="content">
+                            <h2 class="mb-3">Full functionality <br>
+                                on the new Apple Watch</h2>
+                            <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped erae
+                                rendipsa nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid quidestia
+                                vent.
+                            </p>
+                            <div class="accordion accordion-flush w-75" id="accordionFlushExample">
+                                <div class="accordion-item rounded-1">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="bg-main-color text-color rounded-1 accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Benefit 1
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse rounded-1"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped
+                                                erae rendipsa nulluptur ressunt eatistis etur, eatisti aut militat. Ate
+                                                reicipid quidestia vent.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item my-2 rounded-1">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="bg-main-color text-color rounded-1 accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Benefit 2
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse rounded-1"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped
+                                                erae rendipsa nulluptur ressunt eatistis etur, eatisti aut militat. Ate
+                                                reicipid quidestia vent.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item rounded-1">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button
+                                            class="bg-main-color text-color rounded-1 accordion-button collapsed rounded-1"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                            aria-controls="flush-collapseThree">
+                                            Benefit 3
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped
+                                                erae rendipsa nulluptur ressunt eatistis etur, eatisti aut militat. Ate
+                                                reicipid quidestia vent.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-6 col-sm-12 wrapper-v-lg">
+                        <div class="img-watch">
+                            <img class="reveal-right-20"
+                                src="http://egotype.design/work/web/html/fibre/demo/images/function-2-device.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-features py-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <h2 class="text-center" id="features">App Features</h2>
+                </div>
+
+                <div class="row vert-middle-md">
+                    <div class="col-12 col-md-3 col-sm-6 flex-fill features-left wrapper-v-lg">
+                        <div class="content">
+                            <div class="icon-feat">
+                                <i class="ri-paint-line"></i>
+                            </div>
+                            <h4>Color Schemes</h4>
+                            <p>Nimpos essiniminita porro dolestint. Cuptate mporent ea consed mollabo. Et rerfercit,
+                                omnimaio magnaturiat.</p>
+                        </div>
+                        <div class="content">
+                            <div class="icon-feat">
+                                <i class="ri-image-line"></i>
+                            </div>
+                            <h4>Responsive Media</h4>
+                            <p>Nimpos essiniminita porro dolestint. Cuptate mporent ea consed mollabo. Et rerfercit,
+                                omnimaio magnaturiat.</p>
+                        </div>
+                        <div class="content">
+                            <div class="icon-feat">
+                                <i class="ri-settings-3-line"></i>
+                            </div>
+                            <h4>Cross Browser Support</h4>
+                            <p>Nimpos essiniminita porro dolestint. Cuptate mporent ea consed mollabo. Et rerfercit,
+                                omnimaio magnaturiat.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-md-pull-3 col-sm-8 flex-fill order-3 order-lg-2 wrapper-v-lg">
+                        <div class="photo text-center">
+                            <img class="img-responsive img-fluid"
+                                src="http://egotype.design/work/web/html/fibre/demo/images/features-device.png" alt="">
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-md-3 col-md-push-6 col-sm-6 flex-fill order-2 order-lg-3 features-right wrapper-v-lg">
+                        <div class="content">
+                            <div class="icon-feat">
+                                <i class="ri-font-family"></i>
+                            </div>
+                            <h4>720+ Icon Fonts</h4>
+                            <p>Nimpos essiniminita porro dolestint. Cuptate mporent ea consed mollabo. Et rerfercit,
+                                omnimaio magnaturiat.</p>
+                        </div>
+                        <div class="content">
+                            <div class="icon-feat">
+                                <i class="ri-vip-diamond-line"></i>
+                            </div>
+                            <h4>Pure & Simple</h4>
+                            <p>Nimpos essiniminita porro dolestint. Cuptate mporent ea consed mollabo. Et rerfercit,
+                                omnimaio magnaturiat.</p>
+                        </div>
+                        <div class="content">
+                            <div class="icon-feat">
+                                <i class="ri-gift-line"></i>
+                            </div>
+                            <h4>More Features</h4>
+                            <p>Nimpos essiniminita porro dolestint. Cuptate mporent ea consed mollabo. Et rerfercit,
+                                omnimaio magnaturiat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-tertiary py5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-12 wrapper-v-lg text-center">
+                        <h2>Download App</h2>
+                    </div>
+                    <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped erae rendipsa nulluptur
+                        ressunt eatistis etur, eatisti aut militat. Ate reicipid quidestia vent.</p>
+                    <div class="col-sm-6 col-sm-offset-3 col-md-12 wrapper-v-lg text-center btn-app">
+                        <a href="#" class="btn bg-main-color text-color"><i class="ri-apple-line"></i> App Store</a>
+                        <a href="#" class="btn bg-main-color text-color"><i class="ri-android-line"></i> Play Store</a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-md-offset-2 wrapper-v-lg">
+                    <div class="download-device-shadow text-center">
+                        <img class="img-fluid img-responsive"
+                            src="http://egotype.design/work/web/html/fibre/demo/images/download-device.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-pricing py-5">
+            <div class="container">
+                <h2 class="text-center" id="pricing">Our Plans</h2>
+                <p class="text-center w-50 mx-auto">Itatendam utentotatiat volupta expero ma volorum quiam vel
+                    estioreped erae rendipsa nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid
+                    quidestia vent.</p>
+
+                <div class="row row-cols-1 row-cols-md-3 gy-3">
+                    <div class="col">
+                        <div class="item border rounded">
+                            1
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item border rounded">
+                            3
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item border rounded">
+                            3
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    All Rights Reserved. Sources: Sourcename
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-end">
+                        Socials List
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#myCarousel').carousel({
+                interval: 3000,
+                dots:true,
+                nav: false,
+            })
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,7 +1,4 @@
-:root{
-    --main-color: #ff6700;
-    --white-color: #fff;
-}
+
 /* breakpoint  */
 
 /*media queries*/
@@ -32,8 +29,8 @@
     }
     .product-list .item{
         width: calc((100% - 20px) / 3);
-        background-color: #f3f3f3;
-        min-height: 150px;
+        /* background-color: #f3f3f3;
+        min-height: 150px; */
     }
     footer .footer-wrapper{
         flex-wrap: wrap;
@@ -49,10 +46,13 @@
     header .main-nav ul{
         display: none;
     }
+    header .main-nav.actived ul{
+        display: block;
+    }
     .product-list .item{
         width: calc((100% - 10px) / 2);
-        background-color: #f3f3f3;
-        min-height: 150px;
+        /* background-color: #f3f3f3;
+        min-height: 150px; */
     }
     footer .footer-wrapper{
         row-gap: 20px;
@@ -64,29 +64,45 @@
     header .header-nav{
         flex-direction: row;
     }
-    #toogle-moblie{
+    #toggle-mobile{
         display: block;
         position: relative;
-        margin-top: 8px;
+        margin-top: 10px;
     }
-    #toogle-moblie,
-    #toogle-moblie::before,
-    #toogle-moblie::after{
+    #toggle-mobile,
+    #toggle-mobile::before,
+    #toggle-mobile::after{
         background-color: var(--white-color);
         height: 3px;
         width: 30px;
     }
-    #toogle-moblie::before,
-    #toogle-moblie::after{
+    #toggle-mobile::before,
+    #toggle-mobile::after{
         content: "";
         position: absolute;
         left: 0;
     }
-    #toogle-moblie::before{
+    #toggle-mobile::before{
         top: -8px;
     }
-    #toogle-moblie::after{
+    #toggle-mobile::after{
         bottom: -8px;
+    }
+    header{
+        position: relative;
+        height: 48px;
+    }
+    header .main-nav ul{
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    header .main-nav ul li a{
+        color: #111;
     }
    
 }
