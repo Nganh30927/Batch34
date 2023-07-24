@@ -7,14 +7,16 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -59,48 +61,162 @@
                 </div>
             </nav>
         </div>
+
     </header>
     <main class="mt-5">
-        <section class="bg-body-tertiary py-5" id="large-banner">
-            <div class="container">
-                <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="true">
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousels" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                      </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="mask flex-center">
-                                <div class="container">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-7 col-12 order-md-1 order-2">
-                                            <h4>iPhone XS</h4>
-                                            <p>This has many features that are simply awesome. The phone comes with a
-                                                3.50-inch display with a resolution of 320x480 pixels.</p> <br> <a
-                                                href="#">BUY NOW</a>
-                                        </div>
-                                        <div class="col-md-5 col-12 order-md-2 order-1"><img
-                                                src="http://egotype.design/work/web/html/fibre/demo/images/hero-devices-4-1.png"
-                                                class="mx-auto" alt="slide"></div>
-                                    </div>
+        <section class="bg-body-tertiary py-5">
+            <div class="owl-carousel owl-theme" id="large-banner">
+                <div class="item wrapper-v-lg">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-2 align-items-center">
+                            <div class="col">
+                                <div class="photo-banner text-center">
+                                    <img height="400" width="300" class="ao-item" data-aos="fade-right"
+                                        src="http://egotype.design/work/web/html/fibre/demo/images/hero-devices-4-1.png"
+                                         alt="slide">
+                                </div>   
+                            </div>
+                            <div class="col">
+                               <div class="content-banner aos-item"data-aos="fade-left">
+                                <h1 class="mb-4">Perfect Design
+                                    <br>
+                                    on every Device.
+                                </h1>
+                                <p>Ignis re volorerovit qui of c tenimo minvenietur sus aut vid et adis est
+                                    pressus rerum quam fuga. Equis ipsanim reiundit que cusdand iciunt omnis
+                                    volorat.</p>
+    
+                                <div class="wrapper-v-lg">
+                                    <h4>
+                                        Download the App today <br>
+                                        anf start your free trial
+    
+                                    </h4>
                                 </div>
+                                <div class="wrapper-v-lg btn-app">
+                                    <a href="#" class="btn bg-main-color text-color"><i class="ri-apple-line"></i> App
+                                        Store</a>
+                                    <a href="#" class="btn bg-main-color text-color"><i class="ri-android-line"></i>
+                                        Play Store</a>
+                                </div>
+                               </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="mask flex-center">
-                                <div class="container">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-7 col-12 order-md-1 order-2">
-                                            <h4>HP Pavillion</h4>
-                                            <p>This has many features that are simply awesome.The phone comes with a
-                                                3.50-inch display with a resolution of 320x480 pixels.</p> <br> <a
-                                                href="#">BUY NOW</a>
-                                        </div>
-                                        <div class="col-md-5 col-12 order-md-2 order-1"><img
-                                                src="https://i.imgur.com/tVBy5Q0.png" class="mx-auto" alt="slide"></div>
-                                    </div>
+                    </div>
+                </div>
+                <div class="item wrapper-v-lg">
+                    <div class="container">
+                    <div class="row row-cols-1 row-cols-md-2 align-items-center">
+                        <div class="col">
+                            <div class="photo-banner text-center">
+                                <img class="img-fluid"
+                                src="http://egotype.design/work/web/html/fibre/demo/images/hero-devices-4-3.png"
+                                alt="">
+                            </div>   
+                        </div>
+                        <div class="col">
+                           <div class="content-banner">
+                            <h2 class="mb-4">Full functionality
+                                <br>
+                                on the new Apple Watch.
+                            </h2>
+                            <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped erae
+                                rendipsa
+                                nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid quidestia
+                                vent.</p>
+    
+                            <div class="row mt-4">
+                                <div class="col-sm-6 w-50 wrapper-v-lg">
+                                    <i class="ri-smartphone-line"></i>
+                                    <h4>Full Responsive</h4>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod
+                                        tempor invidunt ut labore</p>
                                 </div>
+                                <div class="col-sm-6 w-50 wrapper-v-lg">
+                                    <i class="ri-tools-line"></i>
+                                    <h4>Easy Customise</h4>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod
+                                        tempor invidunt ut labore</p>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div></div>
+                <div class="item wrapper-v-lg">
+                    <div class="container">
+                    <div class="row row-cols-1 row-cols-md-2 align-items-center">
+                        <div class="col">
+                            <div class="photo-banner text-center">
+                                <img class="img-fluid" style="width: 300px; height: 420px;"
+                                        src="http://egotype.design/work/web/html/fibre/demo/images/hero-devices-4-4.png"
+                                        alt="slide">
+                            </div>   
+                        </div>
+                        <div class="col">
+                           <div class="content-banner wrapper-v-lg">
+                            <h1 class="mb-4">Perfect Design
+                                <br>
+                                on every Device.
+                            </h1>
+                            <p>Ignis re volorerovit qui of c tenimo minvenietur sus aut vid et adis est
+                                pressus rerum quam fuga. Equis ipsanim reiundit que cusdand iciunt omnis
+                                volorat.</p>
+    
+                            <div class="wrapper-v-lg">
+                                <h4>
+                                    Download the App today <br>
+                                    anf start your free trial
+    
+                                </h4>
+                            </div>
+                            <div class="wrapper-v-lg btn-app">
+                                <a href="#" class="btn bg-main-color text-color"><i class="ri-apple-line"></i> App
+                                    Store</a>
+                                <a href="#" class="btn bg-main-color text-color"><i class="ri-android-line"></i>
+                                    Play Store</a>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="item wrapper-v-lg">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-2 align-items-center">
+                            <div class="col order-2 order-md-1">
+                               <div class="content-banner">
+                                <h1 class="mb-4">Perfect Design
+                                    <br>
+                                    on every Device.
+                                </h1>
+                                <p>Ignis re volorerovit qui of c tenimo minvenietur sus aut vid et adis est
+                                    pressus rerum quam fuga. Equis ipsanim reiundit que cusdand iciunt omnis
+                                    volorat.</p>
+    
+                                <div class="wrapper-v-lg">
+                                    <h4>
+                                        Download the App today <br>
+                                        anf start your free trial
+    
+                                    </h4>
+                                </div>
+                                <div class="wrapper-v-lg btn-app">
+                                    <a href="#" class="btn bg-main-color text-color"><i class="ri-apple-line"></i> App
+                                        Store</a>
+                                    <a href="#" class="btn bg-main-color text-color"><i class="ri-android-line"></i>
+                                        Play Store</a>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="col order-1 order-md-2">
+                                <div class="photo-banner text-center">
+                                    <img class="img-fluid"
+                                        src="http://egotype.design/work/web/html/fibre/demo/images/hero-devices-4-5.png"
+                                         alt="slide">
+                                </div>   
                             </div>
                         </div>
                     </div>
@@ -187,8 +303,8 @@
         </section>
         <section class="bg-body-tertiary functionality">
             <div class="container">
-                <div class="row wrapper-v-lg">
-                    <div class="col col-md-6 col-sm-12  wrapper-v-lg">
+                <div class="row row-cols-1 row-cols-md-2 wrapper-v-lg">
+                    <div class="col col-12 col-md-4  wrapper-v-lg">
                         <div class="content">
                             <h2 class="mb-3">Full functionality <br>
                                 on the new Apple Watch</h2>
@@ -201,7 +317,7 @@
                                     <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="bg-main-color text-color rounded-1 accordion-button collapsed"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            aria-expanded="true" aria-controls="flush-collapseOne">
                                             Benefit 1
                                         </button>
                                     </h2>
@@ -253,7 +369,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-md-6 col-sm-12 wrapper-v-lg">
+                    <div class="col col-md-8 col-12 wrapper-v-lg">
                         <div class="img-watch">
                             <img class="reveal-right-20"
                                 src="http://egotype.design/work/web/html/fibre/demo/images/function-2-device.png"
@@ -269,8 +385,8 @@
                     <h2 class="text-center" id="features">App Features</h2>
                 </div>
 
-                <div class="row vert-middle-md">
-                    <div class="col-12 col-md-3 col-sm-6 flex-fill features-left wrapper-v-lg">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 vert-middle-md">
+                    <div class="col order-1 order-lg-1 flex-fill text-center-md  wrapper-v-lg">
                         <div class="content">
                             <div class="icon-feat">
                                 <i class="ri-paint-line"></i>
@@ -297,14 +413,13 @@
                         </div>
 
                     </div>
-                    <div class="col-12 col-md-6 col-md-pull-3 col-sm-8 flex-fill order-3 order-lg-2 wrapper-v-lg">
+                    <div class="col order-3 order-lg-2 col-md-12 cent-md flex-fill text-center-md  wrapper-v-lg">
                         <div class="photo text-center">
-                            <img class="img-responsive img-fluid"
+                            <img class="img-responsive" width="458" height="471"
                                 src="http://egotype.design/work/web/html/fibre/demo/images/features-device.png" alt="">
                         </div>
                     </div>
-                    <div
-                        class="col-12 col-md-3 col-md-push-6 col-sm-6 flex-fill order-2 order-lg-3 features-right wrapper-v-lg">
+                    <div class="col order-2 order-lg-3 text-center-md wrapper-v-lg">
                         <div class="content">
                             <div class="icon-feat">
                                 <i class="ri-font-family"></i>
@@ -362,23 +477,307 @@
                     quidestia vent.</p>
 
                 <div class="row row-cols-1 row-cols-md-3 gy-3">
-                    <div class="col">
-                        <div class="item border rounded">
-                            1
+                    <div class="col cols-sm-4 wrapper-v-lg text-center">
+                        <div class="item price-lan border rounded ">
+                            <h4>STARTER</h4>
+                            <div class="price-marker">
+                                <p class="price">
+                                    &dollar;14
+
+                                    <span class="price-cent">99</span>
+                                    <span class="price-per">/month</span>
+                                </p>
+                            </div>
+                            <ul class="price-detail">
+                                <li>5 Projets</li>
+                                <li>5 GB of Storage</li>
+                                <li>Up to 10 Users</li>
+                                <li>Security Suite</li>
+                            </ul>
+                            <div class="wrapper-v-lg">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Sign Up</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="item border rounded">
-                            3
+                    <div class="col cols-sm-4 wrapper-v-lg text-center">
+                        <div class="item price-lan border rounded ">
+                            <h4>STARTER</h4>
+                            <div class="price-marker">
+                                <p class="price">
+                                    &dollar;14
+
+                                    <span class="price-cent">99</span>
+                                    <span class="price-per">/month</span>
+                                </p>
+                            </div>
+                            <ul class="price-detail">
+                                <li>5 Projets</li>
+                                <li>5 GB of Storage</li>
+                                <li>Up to 10 Users</li>
+                                <li>Security Suite</li>
+                            </ul>
+                            <div class="wrapper-v-lg">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Sign Up</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="item border rounded">
-                            3
+                    <div class="col cols-sm-4 wrapper-v-lg text-center">
+                        <div class="item price-lan border rounded ">
+                            <h4>STARTER</h4>
+                            <div class="price-marker">
+                                <p class="price">
+                                    &dollar;14
+
+                                    <span class="price-cent">99</span>
+                                    <span class="price-per">/month</span>
+                                </p>
+                            </div>
+                            <ul class="price-detail">
+                                <li>5 Projets</li>
+                                <li>5 GB of Storage</li>
+                                <li>Up to 10 Users</li>
+                                <li>Security Suite</li>
+                            </ul>
+                            <div class="wrapper-v-lg">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Sign Up</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+            </div>
+        </section>
+        <section class="bg-body-tertiary py-5">
+            <div class="container">  
+                    <div class="wrapper-v-lg text-center">
+                        <h2>Watch Video</h2>
+                        <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped
+                            erae rendipsa nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid
+                            quidestia vent.</p>
+                    </div>
+                <div class="row">
+                    <div class="col col-md-8 offset-md-2 wrapper-v-lg text-center">
+                        <div class="ratio ratio-16x9 mb-2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ECZVU4x6Xq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          </div>
+                        <small>Source: video by <a href="#">©Souhail www.vimeo.com</a></small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-8 offset-md-2 wrapper-v-lg text-center">
+                        <h2>What our Clients say</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-8 offset-md-2 wrapper-v-lg text-center">
+                            <div class="owl-carousel owl-theme" id="client-title">
+                                <div class="item" style="margin-left: 20px;">
+                                    <div class="speech-bubble speech-bubble-light">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam, libero,
+                                            voluptatem dolor veritatis debitis dolore facilis vel aperiam consequatur
+                                            et, odit ipsam nostrum voluptate reiciendis ratione repellat modi? Impedit.
+                                        </p>
+                                    </div>
+                                    <img class="img-client img-cricle"
+                                        src="http://egotype.design/work/web/html/fibre/demo/images/testimonial-1.jpg"
+                                        alt="">
+                                    <div class="testimonial-details">
+                                        <h4 style="color:#3aafd6 ;">Jason Baker</h4>
+                                        <p><small>Developer Design Minds</small></p>
+                                        <ul class="social">
+                                            <li><i class="ri-twitter-fill"></i></li>
+                                            <li><i class="ri-linkedin-box-fill"></i></li>
+                                            <li><i class="ri-xing-line"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item" style="margin-left: 20px;">
+                                    <div class="speech-bubble speech-bubble-light">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam, libero,
+                                            voluptatem dolor veritatis debitis dolore facilis vel aperiam consequatur
+                                            et, odit ipsam nostrum voluptate reiciendis ratione repellat modi? Impedit.
+                                        </p>
+                                    </div>
+                                    <img class="img-client img-cricle"
+                                        src="http://egotype.design/work/web/html/fibre/demo/images/testimonial-2.jpg"
+                                        alt="">
+                                    <div class="testimonial-details">
+                                        <h4 style="color:#3aafd6 ;">Michael Anderson</h4>
+                                        <p><small>CEO App Solutions</small></p>
+                                        <ul class="social">
+                                            <li><i class="ri-twitter-fill"></i></li>
+                                            <li><i class="ri-linkedin-box-fill"></i></li>
+                                            <li><i class="ri-xing-line"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item" style="margin-left: 20px;">
+                                    <div class="speech-bubble speech-bubble-light">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam, libero,
+                                            voluptatem dolor veritatis debitis dolore facilis vel aperiam consequatur
+                                            et, odit ipsam nostrum voluptate reiciendis ratione repellat modi? Impedit.
+                                        </p>
+                                    </div>
+                                    <img class="img-client img-cricle"
+                                        src="http://egotype.design/work/web/html/fibre/demo/images/testimonial-3.jpg"
+                                        alt="">
+                                    <div class="testimonial-details">
+                                        <h4 style="color:#3aafd6 ;">Steve King</h4>
+                                        <p><small>Designer App World</small></p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+                                            <li><a href="#"><i class="ri-linkedin-box-fill"></i></a></li>
+                                            <li><a href="#"><i class="ri-xing-line"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <section id="newsletter" class="newsletter-image pos-relative py-5 bg-body-tertiary">
+            <div class="section-overlay bg-white opacity-90"></div>
+            <div class="container wrapper-v-lg">
+                <div class="row">
+                    <div class="col cols-sm-8 cols-sm-offset-2 wrapper-v-lg text-center">
+                        <h2 class="pos-relative">Subscribe to our Newsletter
+                            <br>
+                            Stay tuned
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col cols-md-offset-4 cols-sm-8 cols-sm-offset-2 wrapper-v-lg">
+                        <form id="form-news" class="wrapper-v-lg" novalidate="true">
+                            <div class="form-group input-group">
+                                <input type="email" id="email" class="form-control form-control-silver" name="EMAIL"
+                                    placeholder="Email">
+                            </div>
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-border-silver">
+                                    <i class="ri-send-plane-fill"></i>
+                                </button>
+                            </span>
+                        </form>
+                        <div class="col cols-sm-6 cols-sm-offset-3 wrapper-v-lg text-center">
+                            <p class="pos-relative"><small>Itatendam utentotatiat volupta expero ma volorum quiam vel
+                                    estioreped erae
+                                    rendipsa
+                                    nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid quidestia vent.
+                                </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-1">
+            <div class="container wrapper-v-lg">
+                <div class="row">
+                    <div class="col cols-md-10 cols-md-offset-1 wrapper-v-lg banner-site">
+                        <div class="row">
+                            <div class="col cols-sm-3 cols-xs-6 wrapper-v-lg">
+                                <img src="http://egotype.design/work/web/html/fibre/demo/images/partner-logo-1.png"
+                                    class="img-responsive hor-middle" width="140" alt="">
+                            </div>
+                            <div class="col cols-sm-3 cols-xs-6 wrapper-v-lg">
+                                <img src="http://egotype.design/work/web/html/fibre/demo/images/partner-logo-2.png"
+                                    class="img-responsive hor-middle" width="140" alt="">
+                            </div>
+                            <div class="col cols-sm-3 cols-xs-6 wrapper-v-lg">
+                                <img src="http://egotype.design/work/web/html/fibre/demo/images/partner-logo-3.png"
+                                    class="img-responsive hor-middle" width="140" alt="">
+                            </div>
+                            <div class="col cols-sm-3 cols-xs-6 wrapper-v-lg">
+                                <img src="http://egotype.design/work/web/html/fibre/demo/images/partner-logo-4.png"
+                                    class="img-responsive hor-middle" width="140" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-body-tertiary">
+            <div class="container wrapper-v-lg">
+                <div class="row">
+                    <div class="col cols-md-8 cols-md-offset-2 wrapper-v-lg text-center">
+                        <h2>Srceenshots </h2>
+                        <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped erae rendipsa
+                            nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid quidestia vent.</p>
+                    </div>
+                    <div class="cols-md-12 wrapper-v-lg">
+                        <div class="owl-carousel owl-theme" id="cal-screen">
+                            <div class="item">
+                                <img src="http://egotype.design/work/web/html/fibre/demo/images/gallery-app-1.jpg"
+                                    class="img-responsive" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://egotype.design/work/web/html/fibre/demo/images/gallery-app-2.jpg"
+                                    class="img-responsive" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://egotype.design/work/web/html/fibre/demo/images/gallery-app-3.jpg"
+                                    class="img-responsive" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://egotype.design/work/web/html/fibre/demo/images/gallery-app-4.jpg"
+                                    class="img-responsive" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://egotype.design/work/web/html/fibre/demo/images/gallery-app-5.jpg"
+                                    class="img-responsive" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="http://egotype.design/work/web/html/fibre/demo/images/gallery-app-6.jpg"
+                                    class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-tertiary py-5">
+            <div class="container">
+                <div class="row send-touch">
+                    <div class="col-md-8 col-md-offset-2 wrapper-v-lg text-center">
+                        <h2>Get In Touch</h2>
+                        <p>Itatendam utentotatiat volupta expero ma volorum quiam vel estioreped erae rendipsa
+                            nulluptur ressunt eatistis etur, eatisti aut militat. Ate reicipid quidestia vent.</p>
+                    </div>
+                    <div class="col-md-8 cols-md-offset-2 wrapper-v-lg text-center">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-gp" id="name-field">
+                                    <label for="form-name" class="sr-only"></label>
+                                    <input type="text" class="form-ctrol" id="form-name" name="form-name"
+                                        placeholder="Name" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-gp" id="name-field">
+                                    <label for="form-name" class="sr-only"></label>
+                                    <input type="text" class="form-ctrol" id="form-name" name="form-name"
+                                        placeholder="Name" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-grp" id="message-field">
+                                    <label for="form-message" class="sr-only"></label>
+                                    <textarea class="form-ctrol" rows="12" id="form-message" name="form-message"
+                                        placeholder="Message" required=""></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn bg-main-color text-color"
+                                    style="border-radius: 24px;">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -405,16 +804,80 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        $(document).ready(function () {
+        // $('#large-banner').owlCarousel({
+        //     loop: true,
+        //     items: 1, //số lượng item / 1 màn hình
+        //     margin: 10,
+        //     nav: false,
+        //     dots: true,
+        //     autoplay: true,
+        //     autoplayTimeout: 5000,
+            
+        //     // animateOut: 'fadeInDown',
+        //     // animateIn: 'fadeOutDown'
+            
+        // });
+        $(document).ready(function() {
+        // Khai báo biến tham chiếu đến carousel
+        let slider = $('#large-banner');
 
-            $('#myCarousel').carousel({
-                interval: 3000,
-                dots:true,
-                nav: false,
-            })
-
+        // Khởi tạo carousel với Owl Carousel
+        slider.owlCarousel({
+            loop: true,
+            items: 1, //số lượng item / 1 màn hình
+            margin: 10,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
         });
+
+        // Khởi tạo AOS
+        AOS.init();
+
+        // Kích hoạt sự kiện khi chuyển đổi slide
+        slider.on('changed.owl.carousel', function(event) {
+            // Kích hoạt lại AOS để thực hiện animation cho các phần tử mới
+            AOS.refresh();
+        });
+        });
+
+
+        $('#client-title').owlCarousel({
+            loop: true,
+            items: 1, //số lượng item / 1 màn hình
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            // animateOut: 'fadeInDown',
+            // animateIn: 'fadeOutDown'
+        });
+        $('#cal-screen').owlCarousel({
+            loop: true,
+            items: 4, //số lượng item / 1 màn hình
+            margin: 20,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 250,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+
     </script>
 
 </body>

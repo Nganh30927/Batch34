@@ -1,0 +1,252 @@
+
+
+.image-small{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.image-small:last-child{
+    left: 240px;
+    top: 240px;
+}
+
+.photo-one img{
+    transition: all 0.3s linear;
+}
+.photo-one:hover img{
+    transform: scale(1.1);
+}
+.photo-one span{
+    bottom: 20px;
+    left: 20px;
+}
+
+.photo-second img{
+    transition: all 0.3s linear;
+}
+.photo-second:hover img{
+    transform: scale(1.1);
+}
+
+.photo-second span{
+    bottom: 20px;
+    left: 20px;
+}
+.recomend-filters span{
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.recomend-filters .current,
+.recomend-filters span:hover{
+    background-color: #212121;
+    color: #fff;
+}
+.products-list .item .discount{
+    left: 0;
+    top: 15px;
+    background-color: var(--green-color);
+    font-size: 11px;
+}
+
+.products-list .item .small-icon-product{
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    font-size: 22px;
+
+}
+.products-list .item .small-icon-product:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.products-list .item .fly-icon-top{
+    position: absolute;
+    top: 22%;
+    right: -30px;
+    background-color: #212121;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.4s ease !important;
+}
+.products-list .item .fly-icon-btm{
+    position: absolute;
+    bottom: 15%;
+    right: -30px;
+    background-color: #212121;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.4s ease !important;
+}
+
+.products-list .item:hover .fly-icon-top{
+    cursor: pointer;
+    right: 15px;
+}
+.products-list .item:hover .fly-icon-btm{
+    cursor: pointer;
+    right: 15px;
+}
+
+
+.wrapper-v-md{
+    margin: 25px 0;
+}
+
+#blog-slider .content .topic{
+    color: #333;
+    text-transform: uppercase;
+    opacity: .3;
+    font-weight: 700;
+    letter-spacing: .15em;
+    font-size: 13.05px;
+    margin-bottom: 10px;
+}
+#blog-slider .content{
+    padding: 25px;
+}
+#blog-slider .content h3{
+    font-size: 21px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#blog-slider .content .viewmore{
+    font-size: 15.66px;
+    color: #aaa;
+}
+#blog-slider .content .author{
+    font-size: 14px;
+}
+#blog-slider .thumb:hover img{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.4s linear;
+    z-index: 1;
+} 
+
+#blog-slider .item:hover .row{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.detail-list li{
+    display: flex;
+    margin-bottom: 20px;
+    column-gap: 20px;
+
+}
+.detail-list .product-info{
+    padding-top: 10px;
+}
+.product-detail h4{
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+#brand-img .item:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+} 
+
+.logo-footer img{
+    opacity: 1;
+    max-width: 106px;
+    max-height: 95px;
+    margin-left: 40px;
+}
+
+.social-footer{
+    display: inline-flex;
+    align-items: center;
+}
+.social-footer li{
+    margin: 0 6px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 27px;
+}
+
+.social-footer li:nth-child(1){
+    background-color: blue;
+}
+.social-footer li:nth-child(2){
+    background-color: rgb(11, 216, 216);
+}
+.social-footer li:nth-child(3){
+    background-color: #d44132;
+}
+.social-footer li:nth-child(4){
+    background-color: crimson;
+}
+.social-footer li:nth-child(5){
+    background-color: rgb(134, 49, 49);
+}
+
+/* .form-import{
+    margin-left: 40px;
+} */
+
+.form-import{
+    display: flex;
+    margin-left: 30px;
+}
+.form-import h4{
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.form-import input{
+    width: 400px;
+    padding: 0 0.75em;
+    height: 31px;
+    border: 1px solid #c1c1c1;
+}
+.form-import button{
+    margin-left: 5px;
+    font-size: 15px;
+    height: 31px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.form-import button:hover{
+    background-color: #757474;
+}
+
+.calendar li{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+    padding: 0 0 5px 0;
+    margin-bottom: 5px;
+}
+.calendar li span{
+    display: inline;
+    width: 50%;
+}
+.calendar .day-open{
+    text-align: left;
+}
+.calendar .time-open{
+    text-align: right;
+    float: right;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="a" id="a">
+    <input type="text" name="b" id="b">
+    <select name="pheptinh" id="pheptinh">
+        <option value="add">Cộng</option>
+        <option value="subtract">Trừ</option>
+        <option value="multiply">Nhân</option>
+        <option value="divide">Chia</option>
+        <option value="modulus">Chia lấy dư</option>
+    </select>
+    <button id="get" type="button">Tính kết quả</button>
+    <div id="result"></div>
+    <Script>
+        // TASK1
+        function cal(){
+            let a = $('#a').val();
+            let b = $('#b').val();
+            let pheptinh = $('#pheptinh').val();
+            
+            parseInt(a);
+            parseInt(b);
+            let result = 0;
+
+            if(pheptinh == 'add'){
+                result = a + b;
+            }
+            if(pheptinh == 'subtract'){
+                result = a - b;
+            }
+            if(pheptinh == 'multiply'){
+                result = a * b;
+            }
+            if(pheptinh == 'divine'){
+                result = a / b;
+            }
+            if(pheptinh = 'modulus'){
+                result = a % b;
+            }
+
+            console.log(result);
+           
+           
+        }
+        $("button#get").on("click", function(){
+            cal();
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+    </Script>
+</body>
+</html>

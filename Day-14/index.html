@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify theme</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top border-bottom py-2">
+            <div class="container">
+                <div class="header-top-wrapper d-flex justify-content-between">
+                    <div class="socials-list mt-1">
+                        <i class="ri-facebook-fill"></i>
+                        <span> Call:+01 23456789</span>
+                    </div>
+                    <div class="langues-list">
+                        <div class="currency-wrapper position-relative">
+                            <span class="dropdown-toggle">
+                                USD
+                            </span>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">VI</a></li>
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle bg-white py-4">
+            <div class="container">
+                <div class="header-middle-wrapper d-flex justify-content-between">
+                    <div class="d-flex align-items-center d-lg-none" id="toogle-mobile">
+                        <i class="ri-bar-chart-horizontal-fill icon-toogle"></i>
+                    </div>
+                    <div class="logo">
+                        <img height="30"
+                            src="https://new-elessi2.myshopify.com/cdn/shop/files/furniture-logo_500x.png?v=1613676685"
+                            alt="">
+                    </div>
+                    <nav class="main-nav d-none d-lg-flex" id="main-nav">
+                        <ul class="d-flex flex-column flex-lg-row">
+                            <li class="d-flex d-lg-none justify-content-end pe-2">
+                                <span class="bg-black d-flex me-2 p-1 text-white" id="close-nav">
+                                    <i class="ri-close-line"></i>
+                                </span>
+                            </li>
+                            <li><a href="javascript:;">DEMO</a></li>
+                            <li><a href="javascript:;">SHOP</a></li>
+                            <li><a href="javascript:;">BLOG</a></li>
+                            <li><a href="javascript:;">PAGES</a></li>
+                        </ul>
+                    </nav>
+                    <div class="user-areas">
+                        <button type="button" class="btn">
+                            <i class="ri-search-2-line"></i>
+                        </button>
+                        <a href="javascript:;" class="btn">
+                            <i class="ri-user-line"></i>
+                        </a>
+                        <button type="button" class="btn position-relative">
+                            <i class="ri-heart-line"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                0
+                            </span>
+                        </button>
+                        <button type="button" class="btn position-relative">
+                            <i class="ri-shopping-bag-3-line"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                0
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-banner-home">
+            <img class="img-fluid"
+                src="https://new-elessi2.myshopify.com/cdn/shop/files/slider-home-furniture_1512x.jpg?v=1613676686"
+                alt="">
+        </section>
+        <section class="section-categories py-5">
+            <div class="container">
+                <h2 class="text-center">Featured Categories</h2>
+                <p class="lead text-center">The freshest and most exciting news</p>
+                <div class="row row-featured justify-content-center" style="position: relative;">
+                    <div class="row row-cols-md-2">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="photo-one position-relative overflow-hidden">
+                                <img class="img-fluid"
+                                    src="https://new-elessi2.myshopify.com/cdn/shop/files/furniture-sofa-banner_720x.jpg?v=1613676685"
+                                    alt="">
+                                    <span
+                                    class="position-absolute bg-white py-1 px-2 text-dark shadow-sm fw-bold">Sofas</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-img-sec">
+                            <div class="photo-one position-relative overflow-hidden">
+                                <img class="img-fluid"
+                                src="https://new-elessi2.myshopify.com/cdn/shop/files/cat-banner5_720x.jpg?v=1613676685"
+                                alt="">
+                                <span
+                                class="position-absolute bg-white py-1 px-2 text-dark shadow-sm fw-bold">Chair</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row space-v-sm" style="position: absolute; bottom: 0;">
+                        <div class="col-6 col-md-3 col-lg-3">
+                            <div class="photo-second position-relative overflow-hidden">
+                                <img class="img-fluid"
+                                    src="https://new-elessi2.myshopify.com/cdn/shop/files/furniture-lightning-banner_303x.jpg?v=1613676685"
+                                    alt="">
+                                <span
+                                    class="position-absolute bg-white py-1 px-2 text-dark shadow-sm fw-bold">Lighting</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3">
+                            <div class="photo-second position-relative overflow-hidden">
+                                <img class="img-fluid"
+                                    src="https://new-elessi2.myshopify.com/cdn/shop/files/furniture-clock-banner_303x.jpg?v=1613676685"
+                                    alt="">
+                                    <span
+                                    class="position-absolute bg-white py-1 px-2 text-dark shadow-sm fw-bold">Clocks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-best-products py-5">
+            <div class="container">
+                <h2 class="text-center">Best Seller Product</h2>
+                <div class="recomend-filters my-3 d-flex gap-3 justify-content-center flex-wrap">
+                    <span class="border py-1 px-4 current">All</span>
+                    <span class="border py-1 px-4">Feature</span>
+                    <span class="border py-1 px-4">New</span>
+                    <span class="border py-1 px-4">Best</span>
+                    <span class="border py-1 px-4">Deal</span>
+                </div>
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 gy-3 products-list">
+                    <div class="col">
+                        <div class="item position-relative overflow-hidden">
+                            <span class="text-white discount position-absolute py-1 px-2">
+                                -29%
+                            </span>
+                            <span class="small-icon-product">
+                                <i class="ri-heart-3-line"></i>
+                            </span>
+                            <div class="thumb mb-4">
+                                <img class="img-fluid"
+                                    src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e809f1a_360x.jpg?v=1565591423"
+                                    alt="">
+                            </div>
+                            <span class="fly-icon-top">
+                                <i class="ri-eye-fill"></i>
+                            </span>
+                            <span class="fly-icon-btm">
+                                <i class="ri-handbag-fill"></i>
+                            </span>
+                            <h3 class="fs-6">Bird Natural</h3>
+                            <div class="price hstack gap-2">
+                                <del>$35.00</del>
+                                <strong class="text-danger">$25.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item position-relative overflow-hidden">
+                            <span class="text-white discount position-absolute py-1 px-2">
+                                -29%
+                            </span>
+                            <span class="small-icon-product">
+                                <i class="ri-heart-3-line"></i>
+                            </span>
+                            <div class="thumb mb-4">
+                                <img class="img-fluid"
+                                    src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e809f1a_360x.jpg?v=1565591423"
+                                    alt="">
+                            </div>
+                            <span class="fly-icon-top">
+                                <i class="ri-eye-fill"></i>
+                            </span>
+                            <span class="fly-icon-btm">
+                                <i class="ri-handbag-fill"></i>
+                            </span>
+                            <h3 class="fs-6">Bird Natural</h3>
+                            <div class="price hstack gap-2">
+                                <del>$35.00</del>
+                                <strong class="text-danger">$25.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item position-relative overflow-hidden">
+                            <span class="text-white discount position-absolute py-1 px-2">
+                                -29%
+                            </span>
+                            <span class="small-icon-product">
+                                <i class="ri-heart-3-line"></i>
+                            </span>
+                            <div class="thumb mb-4">
+                                <img class="img-fluid"
+                                    src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e809f1a_360x.jpg?v=1565591423"
+                                    alt="">
+                            </div>
+                            <span class="fly-icon-top">
+                                <i class="ri-eye-fill"></i>
+                            </span>
+                            <span class="fly-icon-btm">
+                                <i class="ri-handbag-fill"></i>
+                            </span>
+                            <h3 class="fs-6">Bird Natural</h3>
+                            <div class="price hstack gap-2">
+                                <del>$35.00</del>
+                                <strong class="text-danger">$25.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item position-relative overflow-hidden">
+                            <span class="text-white discount position-absolute py-1 px-2">
+                                -29%
+                            </span>
+                            <span class="small-icon-product">
+                                <i class="ri-heart-3-line"></i>
+                            </span>
+                            <div class="thumb mb-4">
+                                <img class="img-fluid"
+                                    src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e809f1a_360x.jpg?v=1565591423"
+                                    alt="">
+                            </div>
+                            <span class="fly-icon-top">
+                                <i class="ri-eye-fill"></i>
+                            </span>
+                            <span class="fly-icon-btm">
+                                <i class="ri-handbag-fill"></i>
+                            </span>
+                            <h3 class="fs-6">Bird Natural</h3>
+                            <div class="price hstack gap-2">
+                                <del>$35.00</del>
+                                <strong class="text-danger">$25.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item position-relative overflow-hidden">
+                            <span class="text-white discount position-absolute py-1 px-2">
+                                -29%
+                            </span>
+                            <span class="small-icon-product">
+                                <i class="ri-heart-3-line"></i>
+                            </span>
+                            <div class="thumb mb-4">
+                                <img class="img-fluid"
+                                    src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e809f1a_360x.jpg?v=1565591423"
+                                    alt="">
+                            </div>
+                            <span class="fly-icon-top">
+                                <i class="ri-eye-fill"></i>
+                            </span>
+                            <span class="fly-icon-btm">
+                                <i class="ri-handbag-fill"></i>
+                            </span>
+                            <h3 class="fs-6">Bird Natural</h3>
+                            <div class="price hstack gap-2">
+                                <del>$35.00</del>
+                                <strong class="text-danger">$25.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item position-relative overflow-hidden">
+                            <span class="text-white bg-secondary discount position-absolute py-1 px-2">
+                                SOLD OUT
+                            </span>
+                            <span class="small-icon-product">
+                                <i class="ri-heart-3-line"></i>
+                            </span>
+                            <div class="thumb mb-4">
+                                <img class="img-fluid"
+                                    src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e809f1a_360x.jpg?v=1565591423"
+                                    alt="">
+                            </div>
+                            <span class="fly-icon-top">
+                                <i class="ri-eye-fill"></i>
+                            </span>
+                            <span class="fly-icon-btm">
+                                <i class="ri-information-fill"></i>
+                            </span>
+                            <h3 class="fs-6">Bird Natural</h3>
+                            <div class="price hstack gap-2">
+                                <del>$35.00</del>
+                                <strong class="text-danger">$25.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item position-relative overflow-hidden">
+                            <span class="text-white discount position-absolute py-1 px-2">
+                                -29%
+                            </span>
+                            <span class="small-icon-product">
+                                <i class="ri-heart-3-line"></i>
+                            </span>
+                            <div class="thumb mb-4">
+                                <img class="img-fluid"
+                                    src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e809f1a_360x.jpg?v=1565591423"
+                                    alt="">
+                            </div>
+                            <span class="fly-icon-top">
+                                <i class="ri-eye-fill"></i>
+                            </span>
+                            <span class="fly-icon-btm">
+                                <i class="ri-handbag-fill"></i>
+                            </span>
+                            <h3 class="fs-6">Bird Natural</h3>
+                            <div class="price hstack gap-2">
+                                <del>$35.00</del>
+                                <strong class="text-danger">$25.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item position-relative overflow-hidden">
+                            <span class="text-white discount position-absolute py-1 px-2">
+                                -29%
+                            </span>
+                            <span class="small-icon-product">
+                                <i class="ri-heart-3-line"></i>
+                            </span>
+                            <div class="thumb mb-4">
+                                <img class="img-fluid"
+                                    src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e809f1a_360x.jpg?v=1565591423"
+                                    alt="">
+                            </div>
+                            <span class="fly-icon-top">
+                                <i class="ri-eye-fill"></i>
+                            </span>
+                            <span class="fly-icon-btm">
+                                <i class="ri-handbag-fill"></i>
+                            </span>
+                            <h3 class="fs-6">Bird Natural</h3>
+                            <div class="price hstack gap-2">
+                                <del>$35.00</del>
+                                <strong class="text-danger">$25.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="owl-sell py-5">
+            <div class="owl-carousel owl-theme" id="sell-title">
+                <div class="item bg-warning py-1">
+                    <h6 class="text-white text-center mt-3">UP TO 70% OFF THE ENTRIRE STORE! - MADE WITH LOVE by <span
+                            class="text-decoration-underline">The4studio</span></h6>
+                </div>
+                <div class="item bg-warning py-1">
+                    <h6 class="text-white text-center mt-3">UP TO 70% OFF THE ENTRIRE STORE! - MADE WITH LOVE by <span
+                            class="text-decoration-underline">The4studio</span></h6>
+                </div>
+                <div class="item bg-warning py-1">
+                    <h6 class="text-white text-center mt-3">UP TO 70% OFF THE ENTRIRE STORE! - MADE WITH LOVE by <span
+                            class="text-decoration-underline">The4studio</span></h6>
+                </div>
+            </div>
+        </section>
+        <section class="section-best-products py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/DmFtQrnBSe0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col wrapper-v-md">
+                        <div class="title-video">
+                            <h2>About Us</h2>
+                        </div>
+                        <p>Our mission is to bring together a diverse, curated collection of beautiful furniture and
+                            homewares from around the world. I was popularised in the 1960s with the release.</p>
+                        <div class="row gy-3">
+                            <div class="col-12 col-md-6">
+                                <div class="small-wrapper d-flex">
+                                    <div class="img-small">
+                                        <img src="https://new-elessi2.myshopify.com/cdn/shop/files/about-us-icon1_600x.png?v=1613676685"
+                                            alt="">
+                                    </div>
+                                    <div class="title-about ps-3">
+                                        <h5>We work in Global</h5>
+                                        <span class="text-secondary">Lorem ipsum</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="small-wrapper d-flex">
+                                    <div class="img-small">
+                                        <img src="https://new-elessi2.myshopify.com/cdn/shop/files/about-us-icon1_600x.png?v=1613676685"
+                                            alt="">
+                                    </div>
+                                    <div class="title-about ps-3">
+                                        <h5>We work in Global</h5>
+                                        <span class="text-secondary">Lorem ipsum</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="small-wrapper d-flex">
+                                    <div class="img-small">
+                                        <img src="https://new-elessi2.myshopify.com/cdn/shop/files/about-us-icon1_600x.png?v=1613676685"
+                                            alt="">
+                                    </div>
+                                    <div class="title-about ps-3">
+                                        <h5>We work in Global</h5>
+                                        <span class="text-secondary">Lorem ipsum</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="small-wrapper d-flex">
+                                    <div class="img-small">
+                                        <img src="https://new-elessi2.myshopify.com/cdn/shop/files/about-us-icon1_600x.png?v=1613676685"
+                                            alt="">
+                                    </div>
+                                    <div class="title-about ps-3">
+                                        <h5>We work in Global</h5>
+                                        <span class="text-secondary">Lorem ipsum</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-blogs py-5">
+            <div class="container">
+                <h2 class="text-center" style="font-weight: 700;">Latest blogs</h2>
+                <p class="lead text-center">The freshest and most exciting news</p>
+
+                <div class="swiper" id="blog-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item shadow-sm my-2">
+                                <div class="container">
+                                    <div class="row py-3">
+                                        <div class="col-12 col-md-12 col-lg-12">
+                                            <div class="thumb overflow-hidden">
+                                                <img class="img-fluid"
+                                                    src="https://new-elessi2.myshopify.com/cdn/shop/articles/Geisha-Round-with-Aviana-Chairs-1024x683_720x.jpg?v=1565665232"
+                                                    alt="">
+                                            </div>
+                                            <div class="content">
+                                                <div class="topic">
+                                                    <a href="javascipt:;">Furniture</a>
+                                                </div>
+                                                <h3>Cloud Modular With Ottaman</h3>
+                                                <div class="author my-2">
+                                                    <span>By</span> Khang Pham <span>on</span> August 12, 2019
+                                                </div>
+                                                <div class="viewmore">
+                                                    <a href="javascript:;"><i class="ri-book-open-line"></i> Read
+                                                        more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item shadow-sm my-2">
+                                <div class="container">
+                                    <div class="row py-3">
+                                        <div class="col-12 col-md-12 col-lg-12">
+                                            <div class="thumb overflow-hidden">
+                                                <img class="img-fluid"
+                                                    src="https://new-elessi2.myshopify.com/cdn/shop/articles/Geisha-Round-with-Aviana-Chairs-1024x683_720x.jpg?v=1565665232"
+                                                    alt="">
+                                            </div>
+                                            <div class="content">
+                                                <div class="topic">
+                                                    <a href="javascipt:;">Furniture</a>
+                                                </div>
+                                                <h3>Cloud Modular With Ottaman</h3>
+                                                <div class="author my-2">
+                                                    <span>By</span> Khang Pham <span>on</span> August 12, 2019
+                                                </div>
+                                                <div class="viewmore">
+                                                    <a href="javascript:;"><i class="ri-book-open-line"></i> Read
+                                                        more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item shadow-sm my-2">
+                                <div class="container">
+                                    <div class="row py-3">
+                                        <div class="col-12 col-md-12 col-lg-12">
+                                            <div class="thumb overflow-hidden">
+                                                <img class="img-fluid"
+                                                    src="https://new-elessi2.myshopify.com/cdn/shop/articles/Geisha-Round-with-Aviana-Chairs-1024x683_720x.jpg?v=1565665232"
+                                                    alt="">
+                                            </div>
+                                            <div class="content">
+                                                <div class="topic">
+                                                    <a href="javascipt:;">Furniture</a>
+                                                </div>
+                                                <h3>Cloud Modular With Ottaman</h3>
+                                                <div class="author my-2">
+                                                    <span>By</span> Khang Pham <span>on</span> August 12, 2019
+                                                </div>
+                                                <div class="viewmore">
+                                                    <a href="javascript:;"><i class="ri-book-open-line"></i> Read
+                                                        more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item shadow-sm my-2">
+                                <div class="container">
+                                    <div class="row py-3">
+                                        <div class="col-12 col-md-12 col-lg-12">
+                                            <div class="thumb overflow-hidden">
+                                                <img class="img-fluid"
+                                                    src="https://new-elessi2.myshopify.com/cdn/shop/articles/Geisha-Round-with-Aviana-Chairs-1024x683_720x.jpg?v=1565665232"
+                                                    alt="">
+                                            </div>
+                                            <div class="content">
+                                                <div class="topic">
+                                                    <a href="javascipt:;">Furniture</a>
+                                                </div>
+                                                <h3>Cloud Modular With Ottaman</h3>
+                                                <div class="author my-2">
+                                                    <span>By</span> Khang Pham <span>on</span> August 12, 2019
+                                                </div>
+                                                <div class="viewmore">
+                                                    <a href="javascript:;"><i class="ri-book-open-line"></i> Read
+                                                        more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <section class="product-detail py-5">
+            <div class="container">
+                <div class="row gy-3">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <h4>Top Rated</h4>
+                        <ul class="detail-list">
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e80900f_80x.jpg?v=1565591423"
+                                        alt="">
+                                </a>
+                                <div class="product-info">
+                                    <div class="pro-title">Bird Natural</div>
+                                    <div class="price-items mt-2">
+                                        <span class="text-danger fs-6">&dollar;25.00</span>
+                                        <span><del>&dollar;38.00</del></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e80900f_80x.jpg?v=1565591423"
+                                        alt="">
+                                </a>
+                                <div class="product-info">
+                                    <div class="pro-title">Bird Natural</div>
+                                    <div class="price-items">
+                                        <span class="text-danger fs-6">&dollar;25.00</span>
+                                        <span><del>&dollar;38.00</del></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e80900f_80x.jpg?v=1565591423"
+                                        alt="">
+                                </a>
+                                <div class="product-info">
+                                    <div class="pro-title">Bird Natural</div>
+                                    <div class="price-items">
+                                        <span class="text-danger fs-6">&dollar;25.00</span>
+                                        <span><del>&dollar;38.00</del></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <h4>Top Rated</h4>
+                        <ul class="detail-list">
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e80900f_80x.jpg?v=1565591423"
+                                        alt="">
+                                </a>
+                                <div class="product-info">
+                                    <div class="pro-title">Bird Natural</div>
+                                    <div class="price-items mt-2">
+                                        <span class="text-danger fs-6">&dollar;25.00</span>
+                                        <span><del>&dollar;38.00</del></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e80900f_80x.jpg?v=1565591423"
+                                        alt="">
+                                </a>
+                                <div class="product-info">
+                                    <div class="pro-title">Bird Natural</div>
+                                    <div class="price-items">
+                                        <span class="text-danger fs-6">&dollar;25.00</span>
+                                        <span><del>&dollar;38.00</del></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e80900f_80x.jpg?v=1565591423"
+                                        alt="">
+                                </a>
+                                <div class="product-info">
+                                    <div class="pro-title">Bird Natural</div>
+                                    <div class="price-items">
+                                        <span class="text-danger fs-6">&dollar;25.00</span>
+                                        <span><del>&dollar;38.00</del></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <h4>Top Rated</h4>
+                        <ul class="detail-list">
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e80900f_80x.jpg?v=1565591423"
+                                        alt="">
+                                </a>
+                                <div class="product-info">
+                                    <div class="pro-title">Bird Natural</div>
+                                    <div class="price-items mt-2">
+                                        <span class="text-danger fs-6">&dollar;25.00</span>
+                                        <span><del>&dollar;38.00</del></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e80900f_80x.jpg?v=1565591423"
+                                        alt="">
+                                </a>
+                                <div class="product-info">
+                                    <div class="pro-title">Bird Natural</div>
+                                    <div class="price-items">
+                                        <span class="text-danger fs-6">&dollar;25.00</span>
+                                        <span><del>&dollar;38.00</del></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="https://new-elessi2.myshopify.com/cdn/shop/products/1844991031538_h576c23e80900f_80x.jpg?v=1565591423"
+                                        alt="">
+                                </a>
+                                <div class="product-info">
+                                    <div class="pro-title">Bird Natural</div>
+                                    <div class="price-items">
+                                        <span class="text-danger fs-6">&dollar;25.00</span>
+                                        <span><del>&dollar;38.00</del></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brand_banner py-5">
+            <div class="container">
+                <div class="owl-carousel owl-theme" id="brand-img">
+                    <div class="item">
+                        <img src="https://new-elessi2.myshopify.com/cdn/shop/files/brand-5_ef0b41dd-ff08-49bb-8a1e-5ef6586b31bd_600x.jpg?v=1613676686"
+                            alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://new-elessi2.myshopify.com/cdn/shop/files/brand-6_fb01cbcb-88e0-494a-a3e0-aca281ef0069_600x.jpg?v=1613676686"
+                            alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://new-elessi2.myshopify.com/cdn/shop/files/brand-4_f381573a-0855-4e9a-9a1c-391dc5c09f76_600x.jpg?v=1613676686"
+                            alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://new-elessi2.myshopify.com/cdn/shop/files/brand-3_6e0bd5b5-9738-4f13-baa1-622e10c332d7_600x.jpg?v=1613676686"
+                            alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://new-elessi2.myshopify.com/cdn/shop/files/brand-2_94081066-596b-4367-bef4-db076e6eb39a_600x.jpg?v=1613676686"
+                            alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://new-elessi2.myshopify.com/cdn/shop/files/brand-1_24ec62fc-0512-4632-912f-8838b21ea77c_600x.jpg?v=1613676686"
+                            alt="">
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="border-top">
+        <div class="footer-top bg-body-tertiary py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row align-items-center gy-3 mb-4">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="logo-footer">
+                                    <img src="https://new-elessi2.myshopify.com/cdn/shop/files/funiture-retina-logo_180x.png?v=1613676685" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <ul class="social-footer">
+                                    <li><i class="ri-facebook-fill"></i></li>
+                                    <li><i class="ri-twitter-fill"></i></li>
+                                    <li><i class="ri-google-fill"></i></li>
+                                    <li><i class="ri-pinterest-fill"></i></li>
+                                    <li><i class="ri-instagram-fill"></i></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="form-import">
+        
+                                        <h4>Newsletter</h4>
+                                        <input type="email" name="email" id="email" placeholder="Your email address">
+                                        <button type="button">SUBSCRIBE</button>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 align-items-center">
+                        <div>
+                            <ul>
+                                <li>Calista Wise 7292 Dictum Av.</li>
+                                <li>Antonio, Italy.</li>
+                                <li>(+01)-800-3456-88</li>
+                                <li>Nasathemes@Gmail.Com</li>
+                                <li>Elessi.Nasatheme.Com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div>
+                            <ul>
+                                <span>Pick a link list to show here in your under</span>
+                                <span><strong>Footer</strong> > <strong>Quick links link list</strong>.</span>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <div>
+                            <ul>
+                                <span>Pick a link list to show here in your under</span>
+                                <span><strong>Footer</strong> > <strong>Quick links link list</strong>.</span>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="opening-time">
+                            <ul class="calendar">
+                                <li>
+                                    <span class="day-open">Monday - Friday</span>
+                                    <span class="time-open">08:00 - 20:00</span>
+                                </li>
+                                <li>
+                                    <span class="day-open">Saturday</span>
+                                    <span class="time-open">08:00 - 20:00</span>
+                                </li>
+                                <li>
+                                    <span class="day-open">Sunday</span>
+                                    <span class="time-open">08:00 - 20:00</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="payment-icons">
+                            <ul class="d-flex">
+                                <li><i class="ri-visa-line"></i></li>
+                                <li><i class="ri-mastercard-line"></i></li>
+                                <li><i class="ri-paypal-line"></i></li>
+                                <li><i class="ri-paypal-line"></i></li>
+                                <li><i class="ri-paypal-line"></i></li>
+                                <li><i class="ri-paypal-line"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center py-3 border-top">
+            <p>&copy;2023 Created by The4 studio. Premium e-commerce solutions.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('#sell-title').owlCarousel({
+            loop: true,
+            items: 1,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5000,  
+            autoplayHoverPause: true,
+        });
+
+        $('#brand-img').owlCarousel({
+            loop: true,
+            items: 6,
+            margin: 20,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 4
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+        var swiper = new Swiper("#blog-slider", {
+            spaceBetween: 20,
+            slidesPerView: 3,
+            freeMode: true,
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+            // when window width is >= 320px
+            320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+            },
+            // when window width is >= 600px
+            600: {
+            slidesPerView: 3,
+            spaceBetween: 30
+            },
+            // when window width is >= 1000px
+            1000: {
+            slidesPerView: 3,
+            spaceBetween: 40
+            }
+        }
+        });
+        $("#toogle-mobile").on("click", function () {
+            console.log('clcik');
+            $("#main-nav").removeClass('d-none').addClass('actived');
+            $("#main-nav ul").animate({ width: '300px' }, 300);
+            $("body").animate({ position: 'relative', top: '0px', left: '300px' }, 300);
+        });
+        $("#close-nav").on("click", function () {
+            console.log('clcik');
+            $("#main-nav").addClass('d-none').removeClass('actived');
+            $("#main-nav ul").animate({ width: '0px' }, 300);
+            $("body").animate({ position: 'relative', top: '0px', left: '0px' }, 300);
+        });
+    </script>
+</body>
+
+</html>
